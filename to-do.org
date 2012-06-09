@@ -1,0 +1,33 @@
+* TO-DOS
+
+** DONE Portfolio, Twitter > no-js error msg showing on js
+   CLOSED: [2012-04-07 Sat 11:49]
+
+   portfolio - O
+   twitter - X
+   : improve speed of loading to hide error
+
+** Opera > Contact > margins not correct for <input name> & <input email>
+
+** Opera > Portfolio >  -> arrow not showing
+
+** IE7 > Portfolio > GH-2 left align at 1st   
+
+** IE7 > postcards vanished to wrong side
+** Chrome, Safari, Opera check   
+* GOOD TO HAVE
+
+** Portfolio > inner tooltip for arrows
+
+** load tooltip images 1st with other bg image for faster load time
+
+** Tweets > load more images as click on twitter logo
+
+** 'chuck' sound on postcard sent
+
+** IE8 black border around tooltip
+
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */zoom:1;background:transparent;
+
+
+** improve speed of loading

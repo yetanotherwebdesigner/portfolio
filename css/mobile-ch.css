@@ -1,0 +1,7 @@
+/* --------GLOBAL-------- */
+p,label,input,textarea,input[type="submit"],.holder p.remain,h2 a,h2.fourofour{ letter-spacing:1px;line-height:167%;font-family:微软雅黑,黑体,宋体,Lucida Sans Unicode, Lucida Grande, sans-serif; }
+p,label,textarea,input{ line-height:167%;letter-spacing:1px; }
+.copyright p,.copyright a{ letter-spacing:0;Lucida Sans Unicode, Lucida Grande, sans-serif; }
+div.error p{ white-space:pre-line; }
+/* --------404-------- */
+h2.fourofour {width:80%;margin-left:auto;margin-right:auto;}

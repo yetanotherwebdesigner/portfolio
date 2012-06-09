@@ -1,0 +1,16 @@
+/* --------Global-------- */
+.inner-tooltip{ font-size:12px;font-size:1.2rem; }
+p,label,input,textarea,input[type="submit"],.holder p.remain,h2 a,h2.fourofour{ letter-spacing:1px;line-height:167%;font-family:微软雅黑,黑体,宋体,Lucida Sans Unicode, Lucida Grande, sans-serif; }
+.holder h2 + p{ font-size:16px;font-size:1.6rem; }
+.copyright p,.copyright a{ letter-spacing:0;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif; }
+/* --------Tweets-------- */
+#tweets .holder p{ padding: 0 50px 1em;font-weight:bold;letter-spacing:2px; }
+.tweet .tweet_list li, .query .tweet_list li{ font-size:20px;font-size:2rem;padding-top:2em; }
+.scroll-pane{ top:50px; }
+/* --------Portfolio-------- */
+.js .polaroid p { letter-spacing:1px;}
+/* --------CONTACT-------- */
+input#name, input#email{ padding:2px 0; }
+textarea#message{ background:#fff url("/images/textarea-bg-ch.png") repeat-y 0 0;height:420px; }
+/* --------404-------- */
+h2.fourofour{ letter-spacing:1px; }

@@ -1,0 +1,101 @@
+/* Variables for Google webfontloader: pre-and post-loading *
+.wf-loading body,.wf-inactive body { font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;font-weight:normal;  }
+.wf-active body { font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande,sans-serif;font-weight:bold; }
+.wf-loading h1 a,  .wf-inactive h1 a { font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;font-size: 1.4em;  }
+.wf-active h1 a { font-family: 'Orbitron', Lucida Sans Unicode, Lucida Grande, sans-serif;font-weight:normal;font-size: 1.2em; }*/
+.wf-loading .holder p, .wf-inactive .holder p{ font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size:.9em;letter-spacing:0;font-weight:normal; }
+.wf-active .holder p{ font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;font-weight:bold;font-size:1.1em;letter-spacing:2px; }
+/* Google webfontloader ends */
+/* Global Style */
+body{ width:100%;height:100%;background:#add8e6 url("images/bg-tile.png") repeat-x 0 0;text-align:center;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-weight:normal;}
+.content{ width:974px;height:600px;display:block;margin:0 auto;color:darkslategray;}
+.opera body{ height:800px; }
+.copyright{ font-size:.7em;margin:0;padding:0 0 1em;}
+.backlinks{ display:none; }
+ol,ul {	list-style:none;}
+h1,h2{ font-weight:bold; }
+h1 a{ font-family:'Orbitron',Lucida Sans Unicode, Lucida Grande, sans-serif;font-size:1.5em;text-decoration:none;color:#fff;margin:1em 0;padding:1em 0;/* Non-js styles */}
+h2{ font-size:1.25em; }
+p{ line-height:150%;white-space:pre-line;letter-spacing:0; }
+a{ outline:none;text-decoration:underline;color:#4d4d4d; }
+a img{ border:none; }
+.js noscript{ display:none; }
+noscript{ font-weight:bold; }
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;display:none;background:transparent url("images/black_arrow.png") no-repeat 0 0;font-weight:normal;font-size:1.5em;text-transform:small-caps;height:91px;width:160px;padding:25px 25px 25px 15px;color:#e5e5e5;z-index:10;}
+.inner-tooltip {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;background:url("images/white_arrow.png") no-repeat 0 0;font-weight:normal;font-size:.9em;text-transform:small-caps;height:70px;width:120px;padding:20px 20px 20px 12px;color:#333;z-index:9;}
+/* Invoked when no js */
+.holder { font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;}
+.holder h2{ text-align:center;margin:.5em;padding:0 25px;letter-spacing:1px;text-decoration:underline; }
+.holder p{ font-size:.9em;text-align:left;margin:1em;padding:0 25px 1em; }
+/* ######## HOME ############################ */
+#home p{font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-weight:normal;font-size:.9em;margin:1em 0;padding:0; }
+#home #menu{ display:block;width:724px;height:230px;margin:10em auto 1.25em;padding:0; }
+#home #menu a { text-indent:-9999px;display:block;float:left;margin:1em 2em;overflow:visible; }
+#blog { background:transparent url("images/organizer.png") no-repeat 0 0;width:167px;height:220px;}
+#portfolio { background:transparent url("images/polaroid.png") no-repeat 0 0px;width:167px;height:220px; }
+#contact { background:transparent url("images/postbox.png") no-repeat 0 0;width:167px;height:230px; }
+/* ######## SNAPSHOTS ############################ */
+#tweets,#snapshots{ position:relative; }
+.slideshow{ width:570px;height:600px;margin:1.25em 214px 2.5em 189px;padding:0;background:#fff url("images/polaroid-bg.png") repeat 0 0;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;}
+.slideshow img { display:block;background-color:#808080;width:520px;height:347px;margin:25px;padding:0;border-top:2px solid #666;border-right:1px solid #666;border-bottom:1px solid #666;border-left:1px solid #666;}
+.polaroid { color:#4d4d4d;overflow:hidden; }
+.polaroid h2, .polaroid p, .polaroid .arrows{ display:none;}/* hides content if no js */
+.polaroid noscript span{ line-height:150%;display:block;width:490px;height:200px;margin:75px 40px 0; }
+/* shows content when js */
+/* .js .polaroid h2{ letter-spacing:1px; }
+.js .polaroid p{ letter-spacing:2px; }
+ */.js .arrows{ display:inline; }
+.js .polaroid h2, .js .polaroid p{ display:block; }
+.arrows .prev, .arrows .next{ font-size:1.25em;text-decoration:none;margin:0 20px; }
+.prev{ position:absolute;top:400px;left:20px; }
+.next{ position:absolute;top:400px;right:20px; }
+#tweets #menu,#snapshots #menu{ position:absolute;bottom:-60px;left:0;/* needed to centralize menu, i.e. 125 on L & R */width:974px;height:230px;margin:0;padding:0;}
+#tweets #menu a,#snapshots #menu a { text-indent:-9999px;display:block;float:left;margin:0;overflow:visible; }
+#blog-small { background:transparent url("images/organizer-small.png") no-repeat 0 0;width:84px;height:115px;position:absolute;left:50px;}
+#contact-small { background:transparent url("images/postbox-small.png") no-repeat 0 0;width:84px;height:115px;position:absolute;right:58px;}
+/* ######## TWEETS ############################ */
+#tweets #snapshots-small { background:transparent url("images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;left:40px;}
+#tweets #contact-small { background:transparent url("images/postbox-small.png") no-repeat 0 0;width:84px;height:115px;position:absolute;right:48px;}
+#organizer-wrapper{ display:block;width:618px;height:642px;margin:1.25em 214px 2.5em 172px;padding:0;background:url("images/organizer-bg.png") no-repeat 0 0; }
+.organizer{ width:570px;height:600px;margin:0 0 0 29px;padding:0;background:#fff url("images/organizer-ring.png") repeat-y -27px 0;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow:0 3px 1px #333;-moz-box-shadow:0 3px 1px #333;-webkit-box-shadow:0 3px 1px #333x;position:relative;top:25px;}
+.organizer h2{ padding-top:1em;}
+.organizer p{ text-align:center;}
+#ribbon-top{ display:block;height:330px;/* shorten to accomdate .jspdrag */width:30px;background:red url("images/tweets-ribbon.png") no-repeat 0 100%;position:absolute;top:-1px;right:20px;cursor:default;z-index:1;}
+#tweets noscript span{ position:absolute;top:360px;left:320px;width:350px;height:200px;line-height:150%; }
+#twitter-home{ position:absolute;top:400px;left:285px;z-index:8; } 
+.js #ribbon-top{ background-color:red;background-image:none;overflow:hidden; }
+.js #twitter-home{ position:absolute;top:520px;left:285px;z-index:8; } 
+/* customized jquery.tweet.css */
+.loading{ position:absolute;top:100px;left:110px;background:transparent url("images/loading.gif"
+) no-repeat 0 2px;;}
+.tweet{ width:490px;height:830px; }
+.tweet .tweet_list{list-style-type:none;margin:0 0 0 -20px;padding:0;background-color:transparent;width:490px;}
+.tweet .tweet_list .awesome, #tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic {text-transform: uppercase; }
+.tweet .tweet_list li, .query .tweet_list li {font-weight:normal;font-size:1.5em;letter-spacing:1px;line-height:150%;height:250px;margin:0;padding:1.5em 3em 0 3.125em;background:transparent url("images/drawn-circle.png") no-repeat 50px 0;transform: rotate(-2deg);-webkit-transform: rotate(-2deg);-moz-transform: rotate(-2deg); }
+.tweet .tweet_list li a, .query .tweet_list li a{color: red; }
+.tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even { }
+.tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {padding-right: .5em;float: left; }
+.tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img{vertical-align: middle; }
+/* necc css rules for jscroll-pane */
+.jspContainer{overflow:hidden;position:relative}
+.jspPane{position:absolute}
+.jspVerticalBar{position:absolute;top:0;right:0;width:30px;height:100%}
+.jspHorizontalBar{position:absolute;bottom:0;left:0;width:490px;height:0}
+.jspVerticalBar *,.jspHorizontalBar *{margin:0;padding:0}
+.jspCap{display:none}
+.jspHorizontalBar .jspCap{float:left}
+.jspTrack{background-color:#FFF;position:relative}
+.jspDrag{background:red url(images/tweets-ribbon.png) no-repeat 0 100%;position:relative;top:0;left:0;cursor:pointer;z-index:2}
+.jspHorizontalBar .jspTrack,.jspHorizontalBar .jspDrag{float:left;height:100%}
+.jspArrow{background:#50506d;text-indent:-20000px;display:block;cursor:pointer}
+.jspArrow.jspDisabled{cursor:default;background:#80808d}
+.jspVerticalBar .jspArrow{height:16px}
+.jspHorizontalBar .jspArrow{width:16px;float:left;height:100%}
+.jspVerticalBar .jspArrow:focus{outline:none}
+.jspCorner{background:#fff;float:left;height:100%}
+* html .jspCorner{margin:0 -3px 0 0}
+.scroll-pane{width:490px;height:250px;position:relative;left:60px;overflow:hidden;outline:none}
+.js .scroll-pane{ overflow:auto; }
+/* ######## 404 ############################ */
+.error{ color:drakslategrey;}

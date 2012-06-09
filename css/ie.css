@@ -1,0 +1,7 @@
+#home #menu{ display:block;width:724px;height:230px;margin:12em auto 1.25em;padding:0; }
+.tweet .tweet_list{list-style-type:none;margin:0 0 0 -490px;padding:0;background-color:transparent;width:490px;}
+.scroll-pane{left:20px;/* like style.css, to align with #ribbon, only diff. value */}
+.loading{ left:-150px;/* similarly, diff. from style.css */ }
+.jspDrag{/* no need to worry about this;problem seems 2b container */ }
+#ribbon-top{ height:325px;}
+.organizer{ margin:0 0 0 8px;}

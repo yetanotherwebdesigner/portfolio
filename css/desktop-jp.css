@@ -1,0 +1,9 @@
+/* --------Global-------- */
+p,label,input,textarea,input[type="submit"],.holder p.remain,h2.fourofour,h2 a{ font-family:"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Lucida Sans Unicode, Lucida Grande, sans-serif; }
+.inner-tooltip{ font-size:12px;font-size:1.2rem; }
+/* --------Tweets-------- */
+.holder h2 + p{ font-size:16px;font-size:1.6rem; }
+.tweet .tweet_list li, .query .tweet_list li{ font-size:20px;font-size:2rem; }
+.scroll-pane{ top:50px; }
+/* --------Portfolio-------- */
+.js .polaroid p { letter-spacing: 1px;}
