@@ -28,8 +28,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/desktop.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/desktop-ch.css">
     
-    <!--[if lte IE 8]><script src="/js/libs/respond.min.js"></script><![endif]-->   
-    
+    <!--[if lte IE 8]><script src="/js/libs/html5shiv.js"></script><script src="/js/libs/respond.min.js"></script><![endif]-->       
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
@@ -39,8 +38,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
-    <div class="content" id="tweets">
-      <h1 class="title"><a href="/ch">Yet Another Web Designer</a></h1>
+    <h1 class="title"><a href="/ch">Yet Another Web Designer</a></h1>
+    <article class="content" id="tweets">
       <div id="organizer-wrapper">
 	<div class="organizer holder">
 	  <h2><a title="请阅览我的Twitter网页" href="http://twitter.com/yetanotherwebd" target="blank">Twitter消息</a></h2>
@@ -51,15 +50,15 @@
 	  <div class="scroll-pane">
 	    <div class="tweet holder content"></div>
 	  </div>
-	  <a title="请阅览我的Twitter 网页" class="inner-tooltip-invoke" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30"  src="/images/twitter-small.png" /></a>
+	  <a title="请阅览我的Twitter 网页" class="inner-tooltip-invoke" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30" src="/images/twitter-small.png" alt="Twitter的商标" /></a>
 	</div><!-- ends .organizer holder-->
       </div><!-- ends #organizer-wrapper-->
-      <div id="menu">
+      <nav id="menu">
 	<a href="portfolio.php" id="snapshots-small" title="代表作品">代表作品</a>
 	<a href="contact.php" id="contact-small" title="联系我">联系我</a>
-      </div>
-    </div>
-    <div class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com" class="inner-tooltip-invoke" title="用英语浏览这个网站">English</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="用日语浏览这个网站">日本語</a></p></div>
+      </nav>
+    </article>
+    <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com" class="inner-tooltip-invoke" title="用英语浏览这个网站">English</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="用日语浏览这个网站">日本語</a></p></footer>
     <div class="error"><p>注意：若要将Twitter消息下载到网页来，
 	就必须开启Javascript程序。当然，您
 	也可以直接阅览我的Twitter网页。
