@@ -1,6 +1,3 @@
-<?php  
-   require_once("validation.php");  
-?> 
 <!DOCTYPE html>
 <!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
 <!--[if lt IE 7]><html class="no-js ie6 oldie" lang="ja"><![endif]-->
@@ -31,8 +28,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/desktop.css">
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="/css/desktop-jp.css">
     
-    <!--[if lte IE 8]><script src="/js/libs/respond.min.js"></script><![endif]-->   
-
+    <!--[if lte IE 8]><script src="/js/libs/html5shiv.js"></script><script src="/js/libs/respond.min.js"></script><![endif]-->   
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
@@ -43,13 +39,13 @@
     
   </head>
   <body>
-    <div class="content" id="message"> 
-      <h1 class="title"><a href="/jp">Yet Another Web Designer</a></h1> 
+    <h1 class="title"><a href="/jp">Yet Another Web Designer</a></h1> 
+    <article class="content" id="message"> 
       <div class="postcard">
 	<div class="holder">
 	  <form id="cform" name="cform" method="post" action="/sendmail.php">
 	    <div id="postcard-left">
-	      <label for="message">どうぞ好きに書いてください:</label>
+	      <h1><label for="message">どうぞ好きに書いてください:</label></h1>
 	      <textarea name="message" id="message" cols="23" rows="3" class="required" minlength="2"></textarea>
 	    </div>
 	    <div id="postcard-right">
@@ -71,12 +67,12 @@
 	</div>
       </div><!-- ends .postcard -->
       <div class="postbox"></div>
-      <div id="menu">
+      <nav id="menu">
 	<a href="tweets.php" id="blog-small" title="ツイート">ツイート</a>
 	<a href="portfolio.php" id="snapshots-small" title="作品集">作品集</a>    
-      </div> 
-    </div> 
-    <div class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com" class="inner-tooltip-invoke" title="英語でこのサイトをご覧になってください">English</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="中国語でこのサイトをご覧になってください">中文</a></p></div>
+      </nav> 
+    </article>
+    <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com" class="inner-tooltip-invoke" title="英語でこのサイトをご覧になってください">English</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="中国語でこのサイトをご覧になってください">中文</a></p></footer>
     <script src="/js/jquery.min.js"></script> 
     <script src="/js/jquery.validate.min.js"></script>
     <script src="/js/jquery.tools.min.js"></script>
