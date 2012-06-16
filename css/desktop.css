@@ -38,7 +38,7 @@ noscript{ display:none;/* hides Clicky */ }
 #snapshots #menu{ margin-top:0; }
 .slideshow{ width:570px;height:600px;margin:1.25em 214px 2.5em 201px;padding:0;background:#fff url("/images/polaroid-bg.png") repeat 0 0;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;}
 .slideshow img { display:block;background-color:#808080;width:520px;height:347px;margin:25px;padding:0;border:2px solid #c7c7c7;/* nullifies mobile css hereon */box-shadow:0 0 0 #333;}
-.polaroid { color:#4d4d4d;overflow:hidden;height:583px;/* necc. for polaroid to define height to accomodate its content */ }
+.polaroid { color:#4d4d4d;overflow:hidden;height:583px;/* necc. for polaroid to define height to accomodate its content */background-image:inherit;}
 .no-js .polaroid h2,.no-js .polaroid p,.no-js .polaroid .arrows{ display:none;}
 .polaroid img[alt]{ color:#808080; }
 .js .polaroid h2{ letter-spacing:1px; }
@@ -48,7 +48,7 @@ noscript{ display:none;/* hides Clicky */ }
 .arrows .prev, .arrows .next{ font-size:30px;font-size:3rem;font-weight:bold;text-decoration:none;margin:0 20px;/* nullifies mobile css hereon */background:transparent;color:#4d4d4d;border-radius:0;padding:0; }
 .prev{ position:absolute;top:400px;left:20px; }
 .next{ position:absolute;top:400px;right:20px; }
-#message #menu,#tweets #menu,#snapshots #menu{ position:absolute;top:27em;width:981px;z-index:20;}
+#message #menu,#tweets #menu,#snapshots #menu{ position:absolute;top:22em;width:981px;z-index:20;}
 #message #menu a,#tweets #menu a,#snapshots #menu a { text-indent:-9999px;}
 #message #menu a:link,#message #menu a:visited,#tweets #menu a:link,#tweets #menu a:visited,#snapshots #menu a:link,#snapshots #menu a:visited{ position:absolute;margin:0;padding:0;border-radius:0;box-shadow:0 0 0 #000;/* nullifies mobile css */}
 #contact-small { background:transparent url("/images/postbox-small.png") no-repeat 0 0;width:84px;height:115px;position:absolute;right:48px;}
@@ -98,12 +98,13 @@ noscript{ display:none;/* hides Clicky */ }
 #message #snapshots-small { background:transparent url("/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;right:70px;}
 #cform{ margin-top:60px;}
 #cform label[for="message"]{ display:block;padding-bottom:34px; }
+#cform h1{ font-size:100%;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif; }
 #cform label{ font-weight:bold; }
 #postcard-left{ height:540px;float:left;width:360px; }
 #postcard-right{ float:left; width:210px; }
 input{ font-size:14px;font-size:1.4rem; }
 input,textarea{ border-radius:0;margin:0;/* nullifies mobile css */ }
-textarea#message{ font-size:18px;font-size:1.8rem;resize:none;width:300px;max-width:300px;background:#fff url("/images/textarea-bg.png") repeat-y 0 0;border:none;height: 430px;margin: 0 30px;padding: 0;resize:none;overflow:hidden;}
+textarea[name="message"]{ font-size:18px;font-size:1.8rem;resize:none;width:300px;max-width:300px;background:#fff url("/images/textarea-bg.png") repeat-y 0 0;border:none;height: 430px;margin: 0 30px;padding: 0;resize:none;overflow:hidden;}
 .holder p.remain{ font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-weight:normal;text-align:center;color:#c7c7c7;padding:0;margin:100px 0 0 0;/* nullifies mobile css hereon  */display:block; }
 p.remain span{ font-size:50px;font-size:5rem;color:pink;font-weight:bold; }
 p.name,p.email,p.submit{ padding:0;margin:0; }
@@ -112,10 +113,10 @@ p.name{ margin-top:54px; }
 input#name,input#email{ width:180px;max-width:180px;border-left:none;border-right:none;border-top:none;border-bottom:2px solid #4d4d4d;padding:0; }
 input[type="submit"]{ background:url("/images/loading.gif") no-repeat 1em 100px;border:none;padding:1em 0;font-weight:bold;font-size:20px;font-size:2rem;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;/* nullifies mobile css hereon */border-radius:0;color:#4d4d4d;}
 #cform label.error{ position:fixed;top:150px;color:#fff;background:#ff0000;left:40%;padding:10px;border-radius:5px;box-shadow:1px 1px 2px #333;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;letter-spacing:0px; }
-div.postbox{ width:364px;height:600px;top:80px;position:absolute;margin:0 0 0 310px;padding:0;background:transparent url("/images/postbox-huge.png") no-repeat 0 0;z-index:-1;}
+div.postbox{ width:364px;height:600px;top:0;position:absolute;margin:0 0 0 310px;padding:0;background:transparent url("/images/postbox-huge.png") no-repeat 0 0;z-index:-1;}
 .no-js p.remain{ visibility:hidden; }
 /* --------THANKYOU-------- */
-.thankyou div.postbox{ top:125px;}
+.thankyou div.postbox{ top:45px;position:static;}
 #message p{font-size:14px;font-size:1.4rem;text-align:center;}
 div.thankyou+.copyright{ margin:650px 0 0 0; }
 /* --------ERRORS,404--------*/

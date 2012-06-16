@@ -26,7 +26,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
     
-    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->   
+    <!--[if lte IE 8]><script src="js/libs/html5shiv.js"></script><script src="js/libs/respond.min.js"></script><![endif]-->     
     
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
@@ -37,8 +37,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
-    <div class="content" id="tweets">
-      <h1 class="title"><a href="/">Yet Another Web Designer</a></h1>
+    <h1 class="title"><a href="/">Yet Another Web Designer</a></h1>
+    <article class="content" id="tweets">
       <div id="organizer-wrapper">
 	<div class="organizer holder">
 	  <h2><a title="Visit my Twitter page" href="http://twitter.com/yetanotherwebd" target="blank">Tweets</a></h2>
@@ -51,15 +51,15 @@
 	  <div class="scroll-pane">
 	    <div class="tweet holder content"></div>
 	  </div>
-	  <a title="Visit my Twitter page" class="inner-tooltip-invoke" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30"  src="images/twitter-small.png" /></a>
+	  <a title="Visit my Twitter page" class="inner-tooltip-invoke" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30" src="images/twitter-small.png" alt="Small Twitter logo"/></a>
 	</div><!-- ends .organizer holder-->
       </div><!-- ends #organizer-wrapper-->
-      <div id="menu">
+      <nav id="menu">
 	<a href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>
 	<a href="contact.php" id="contact-small" title="contact">Contact</a>
-      </div>
-    </div>
-    <div class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></div>
+      </nav>
+    </article>
+    <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
     <div class="error"><p>Javascript has to be enabled for the tweets to be loaded. Please enable Javascript on your browser and try again. Alternatively, you may visit my Twitter page by clicking on the Twitter logo.</p></div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.jscrollpane.min.js"></script>

@@ -12,7 +12,7 @@ $(document).ready(function(){
       height:['toggle','swing'],width:['toggle','swing'],top:'153',left:'300'
       },500
       ).before("<p>Thank you for your message. I will get back to you soon.</p>");
-      $("div.postbox").css("top","125px");
+      $("div.postbox").css("top","45px");
       $(".copyright").css("margin-top","650px");
 	  $("h1").focus();
       }

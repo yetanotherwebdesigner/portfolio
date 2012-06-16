@@ -26,7 +26,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
     
-    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->   
+    <!--[if lte IE 8]><script src="js/libs/html5shiv.js"></script><script src="js/libs/respond.min.js"></script><![endif]-->     
 
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
@@ -38,14 +38,14 @@
     
   </head>
   <body>
-    <div class="content" id="message"> 
-      <h1 class="title"><a href="/">Yet Another Web Designer</a></h1> 
+    <h1 class="title"><a href="/">Yet Another Web Designer</a></h1>       
+    <article class="content" id="message">
       <div class="postcard">
 	<div class="holder">
 	  <form id="cform" name="cform" method="post" action="sendmail.php">
 	    <div id="postcard-left">
-	      <label for="message">Say What You Like:</label>
-	      <textarea name="message" id="message" cols="23" rows="3" class="required" minlength="2"></textarea>
+	      <h1><label for="speak">Say What You Like:</label></h1>
+	      <textarea name="message" id="speak" cols="23" rows="3" class="required" minlength="2"></textarea>
 	    </div>
 	    <div id="postcard-right">
 	      <p class="remain"><span>480</span>
@@ -67,11 +67,11 @@
 	</div>
       </div><!-- ends .postcard -->
       <div class="postbox"></div>
-      <div id="menu">
+      <nav id="menu">
 	<a href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
 	<a href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
-      </div> 
-    </div> 
+      </nav> 
+    </article> 
     <div class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></div>
     <script src="js/jquery.min.js"></script> 
     <script src="js/jquery.validate.min.js"></script>

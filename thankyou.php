@@ -26,7 +26,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
     
-    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->   
+    <!--[if lte IE 8]><script src="js/libs/html5shiv.js"></script><script src="js/libs/respond.min.js"></script><![endif]-->     
 
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
@@ -38,16 +38,16 @@
     
   </head>
   <body>
-    <div class="content thankyou" id="message"> 
-      <h1 class="title"><a href="/">Yet Another Web Designer</a></h1>
+    <h1 class="title"><a href="/">Yet Another Web Designer</a></h1>
+    <article class="content thankyou" id="message"> 
       <p>Thank you for your message. I will get back to you soon.</p>
       <div class="postbox"></div>
-      <div id="menu">
+      <nav id="menu">
 	<a href="tweets.php" id="blog-small" title="Tweets">Yet Another Web Designer's Tweets</a>
 	<a href="portfolio.php" id="snapshots-small" title="Portfolio">Yet Another Web Designer's Portfolio</a>    
-      </div> 
-    </div> 
-    <div class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></div>
+      </nav> 
+    </article>
+    <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
     <script src="js/jquery.min.js"></script> 
     <script src="js/jquery.tools.min.js"></script>
     <script src="js/yawd.js"></script>
