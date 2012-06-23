@@ -6,7 +6,7 @@
 html{ background:#add8e6 url("/images/bg-tile.png") repeat-x 0 0; }
 body{ height:100%;text-align:center;/* YAWD only */font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;/* nullifies mobile css */width:100%;}
 .content{ width:974px;margin:0 auto;color:darkslategray;}
-.copyright{ margin:4em 0 0; }
+.copyright{ background:transparent url("/images/white_arrow.png") no-repeat -999px 0;margin:4em 0 0; }
 .copyright p{ text-align:center;font-size:10px;font-size:1rem;color:#5c5c5c;}
 h1{ font-size:49px;font-size:4.9rem;margin:.5em 0;}
 h1 a:link,h1 a:visited,h1 a:hover,h1 a:active{ font-family:'Orbitron',Lucida Sans Unicode, Lucida Grande, sans-serif;text-decoration:none;color:#fff;}
@@ -26,7 +26,7 @@ noscript{ display:none;/* hides Clicky */ }
 .holder p{ font-size:.9em;text-align:left;margin:1em;padding:0 25px 1em; }
 /* --------HOME--------*/
 #home p{font-size:14px;font-size:1.4rem;text-align:center;}
-#home #menu{ width:724px;height:230px;margin:10em auto 1.25em;/* nullifies mobile css hereon */padding:0;}
+#home #menu{ background:url("/images/black_arrow.png") no-repeat -999px 0;width:724px;height:230px;margin:10em auto 1.25em;/* nullifies mobile css hereon */padding:0;}
 #home #menu a { text-indent:-9999px;display:block;float:left;margin:1em 2em 1em 2.5em;overflow:visible; }
 #home #menu a:link,#home #menu a:visited { padding:0;border-radius:0;box-shadow:0 0 0 #000;width:167px;/* nullifies mobile css */}
 #home #menu #contact{ top:0; }

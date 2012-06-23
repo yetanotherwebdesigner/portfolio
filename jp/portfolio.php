@@ -36,6 +36,7 @@
     
     <!-- html5 & css3 features for less capable browsers -->
     <!--<script src="/js/libs/modernizr-2.0.6.min.js"></script>-->
+    <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>
     <script src="/js/jquery.min.js"></script> 
     <script src="/js/jquery.cycle.min.js"></script>    
     <script src="/js/jquery.tools.min.js"></script>

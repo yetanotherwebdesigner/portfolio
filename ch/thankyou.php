@@ -36,7 +36,7 @@
     <!-- html5 & css3 features for less capable browsers -->
     <!--<script src="/js/libs/modernizr-2.0.6.min.js"></script>-->
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-    
+    <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>    
   </head>
   <body>
     <h1 class="title"><a href="/ch">Yet Another Web Designer</a></h1>

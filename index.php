@@ -24,13 +24,13 @@
     <!-- For progressively larger displays -->
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
-    
     <!--[if lte IE 8]><script src="js/libs/html5shiv.js"></script><script src="js/libs/respond.min.js"></script><![endif]-->   
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
 	<![endif]-->
     <!-- html5 & css3 features for less capable browsers -->
     <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /> 
   </head>
   <body>
