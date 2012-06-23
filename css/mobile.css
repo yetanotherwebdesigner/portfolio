@@ -19,7 +19,7 @@ a img{ border:none; }
 noscript{ display:none;/* hides Clicky */ }
 /* jQuery Toolstooltip styling */
 .tooltip{text-indent:-9999px;background:transparent;}
-.inner-tooltip {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;background:transparent url("../images/white_arrow.png") no-repeat 0 0;font-weight:normal;font-size:.9em;text-transform:small-caps;height:70px;width:120px;padding:20px 20px 20px 12px;color:#333;z-index:9;}
+.inner-tooltip {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;background:transparent url("..http://cdn.yetanotherwebdesigner.com/images/white_arrow.png") no-repeat 0 0;font-weight:normal;font-size:.9em;text-transform:small-caps;height:70px;width:120px;padding:20px 20px 20px 12px;color:#333;z-index:9;}
 /* ends jQuery Toolstooltip styling */
 .holder h2{ text-align:center;margin:.5em;text-decoration:underline; }
 .holder p{ text-align:center;margin:1em;padding:0 0 1em; }
@@ -54,7 +54,7 @@ noscript{ display:none;/* hides Clicky */ }
 p.remain{ display:none; }
 input,textarea{ width:100%;background:transparent;border:1px solid #4d4d4d;margin:20px 0 0;border-radius:5px; }
 textarea{ min-height:200px; }
-input[type="submit"]{ background:#4d4d4d url("../images/loading-mobile.gif") no-repeat 1em 100px;color:#fff;padding:10px;border-radius:5px;font-weight:bold; }
+input[type="submit"]{ background:#4d4d4d url("..http://cdn.yetanotherwebdesigner.com/images/loading-mobile.gif") no-repeat 1em 100px;color:#fff;padding:10px;border-radius:5px;font-weight:bold; }
 #cform label.error{ background:#ff0000;color:#fff;font-size:12px;font-size:1.2rem;padding:5px;border-radius:5px; }
 /* --------ERRORS,404--------*/
 .js div.error{ display:none; }
