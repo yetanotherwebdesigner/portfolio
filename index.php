@@ -38,7 +38,7 @@
     <article class="content" id="home"> 
       <p>Or not. I play around with HTML, CSS, Javascript, Photoshop - all that fancy stuff. 
 	Yet the Web is my playground, and I am no less an artist than one who paints on canvas.
-	Hire me full-time, engage me for projects, or simply drop me a line.</p> 
+	Hire me full-time, find out more about me, or simply drop me a line.</p> 
       <nav id="menu"> 
 	<a href="tweets.php" class="menu" id="blog" title="Tweets">Tweets</a>
 	<a href="portfolio.php" class="menu" id="portfolio" title="Portfolio">Portfolio</a>
