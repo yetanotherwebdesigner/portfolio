@@ -8,7 +8,7 @@
   <head>
     <title>Twitter消息 | Yet Another Web Designer</title>
     <meta charset="utf-8"/> 
-    <meta name="author" content="Teo Wei Pin, Anthony"/> 
+    <meta name="author" content="Anthony Teo"/> 
     <meta name="description" content="The homepage of yet another web designer, i.e. Teo Wei Pin, Anthony."/> 
     <meta name="keywords" content="web designer, web design, css, html, javascript, responsive design"/>
 

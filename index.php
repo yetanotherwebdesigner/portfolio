@@ -8,8 +8,8 @@
   <head>
     <title>Home | Yet Another Web Designer</title>
     <meta charset="utf-8"/> 
-    <meta name="author" content="Teo Wei Pin, Anthony"/> 
-    <meta name="description" content="The homepage of yet another web designer, i.e. Teo Wei Pin, Anthony."/> 
+    <meta name="author" content="Anthony Teo"/> 
+    <meta name="description" content="The homepage of yet another web designer."/> 
     <meta name="keywords" content="web designer, web design, css, html, javascript, responsive design"/>
     <!-- http://t.co/dKP3o1e -->
     <meta name="HandheldFriendly" content="True">
@@ -31,7 +31,7 @@
     <!-- html5 & css3 features for less capable browsers -->
     <script src="js/libs/modernizr-2.0.6.min.js"></script>
     <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /> 
+    <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
   <body>
     <h1 class="title"><a href="/">Yet Another Web Designer</a></h1> 
