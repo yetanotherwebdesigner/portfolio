@@ -12,7 +12,7 @@ $(document).ready(function(){
       height:['toggle','swing'],width:['toggle','swing'],top:'153',left:'300'
       },500
       ).before("<p>谢谢您的留言。我会尽快与您联系。</p>");
-      $("div.postbox").css("top","125px");
+      $("div.postbox").css("top","45px");
       $(".copyright").css("margin-top","650px");
 	  $("h1").focus();
       }
