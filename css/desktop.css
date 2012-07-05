@@ -48,15 +48,15 @@ noscript{ display:none;/* hides Clicky */ }
 .arrows .prev, .arrows .next{ font-size:30px;font-size:3rem;font-weight:bold;text-decoration:none;margin:0 20px;/* nullifies mobile css hereon */background:transparent;color:#4d4d4d;border-radius:0;padding:0; }
 .prev{ position:absolute;top:400px;left:20px; }
 .next{ position:absolute;top:400px;right:20px; }
-#message #menu,#tweets #menu,#snapshots #menu{ position:absolute;top:22em;width:981px;z-index:20;}
+#message #menu,#tweets #menu,#snapshots #menu{ position:absolute;top:22em;width:100%;z-index:20;}
 #message #menu a,#tweets #menu a,#snapshots #menu a { text-indent:-9999px;}
 #message #menu a:link,#message #menu a:visited,#tweets #menu a:link,#tweets #menu a:visited,#snapshots #menu a:link,#snapshots #menu a:visited{ position:absolute;margin:0;padding:0;border-radius:0;box-shadow:0 0 0 #000;/* nullifies mobile css */}
-#contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 0 0;width:84px;height:115px;position:absolute;right:48px;}
+#contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;right:47px;}
 /* --------TWEETS--------*/
-#tweets #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;left:40px;}
-#tweets #contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 0 0;width:84px;height:115px;position:absolute;right:48px;}
-#blog-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer-small.png") no-repeat 0 0;width:84px;height:115px;position:absolute;left:50px;}
-#organizer-wrapper{ display:block;width:618px;height:642px;margin:1.25em 214px 2.5em 172px;padding:0;background:saddlebrown;border-top-left-radius:none;border-bottom-left-radius:none;border-bottom-right-radius:10px;border-top-right-radius:10px;border-left:2px solid #5e2f0d;box-shadow:0 2px 1px #000; }
+#tweets #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;left:45px;}
+#tweets #contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;right:36px;}
+#blog-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;left:54px;}
+#organizer-wrapper{ display:block;width:618px;height:642px;margin:1.25em auto 2.5em auto;padding:0;background:saddlebrown;border-top-left-radius:none;border-bottom-left-radius:none;border-bottom-right-radius:10px;border-top-right-radius:10px;border-left:2px solid #5e2f0d;box-shadow:0 2px 1px #000; }
 .organizer{ width:570px;height:600px;margin:0 0 0 29px;padding:0;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/organizer-ring.png") repeat-y -27px 0;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow:0 3px 1px #333;-moz-box-shadow:0 3px 1px #333;-webkit-box-shadow:0 3px 1px #333x;position:relative;top:25px;}
 .organizer h2{ padding-top:1em;}
 .organizer p{ text-align:center;}
@@ -94,8 +94,8 @@ noscript{ display:none;/* hides Clicky */ }
 .scroll-pane{width:490px;height:250px;position:relative;left:60px;overflow:hidden;outline:none;min-height:0;}
 .no-js #tweets+footer.copyright+div.error{ top:27em;left:20em;width:380px; }
 /* --------CONTACT-------- */
-.postcard{ width:570px;height:600px;margin:1.25em 214px 2.5em 197px;padding:0;background:#fff;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/yetanotherwebdesigner-stamp.png") no-repeat 95% 5%; }
-#message #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;right:70px;}
+.postcard{ width:570px;height:600px;margin:1.25em auto 2.5em;padding:0;background:#fff;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/yetanotherwebdesigner-stamp.png") no-repeat 95% 5%; }
+#message #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;right:58px;}
 #cform{ margin-top:60px;}
 #cform label[for="message"]{ display:block;padding-bottom:34px; }
 #cform h1{ font-size:100%;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif; }
