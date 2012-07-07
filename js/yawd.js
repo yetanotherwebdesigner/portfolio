@@ -12,4 +12,3 @@
       s.parentNode.insertBefore(wf, s);
       })();
 $j("#menu a[title]").tooltip({effect:"fade",opacity:.9, delay:5});$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
-
