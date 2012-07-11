@@ -61,10 +61,11 @@
       </nav> 
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
-    <canvas></canvas>
+    <canvas></canvas><a id="canvas-link" class="inner-tooltip-invoke" title="Find Me on Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"></a>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.tools.min.js"></script>
     <script src="js/yawd.js"></script>
+    <script>init();</script>
     <script src="//static.getclicky.com/js"></script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
