@@ -31,21 +31,6 @@
     <!-- html5 & css3 features for less capable browsers
     <script src="js/libs/modernizr-2.0.6.min.js"></script>-->
     <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>
-    <script src="js/easeljs/utils/UID.4.2.js"></script>
-    <script src="js/easeljs/geom/Matrix2D.4.2.js"></script>
-    <script src="js/easeljs/events/MouseEvent.4.2.js"></script>
-    <script src="js/easeljs/utils/SpriteSheetUtils.4.2.js"></script>
-    <script src="js/easeljs/display/SpriteSheet.4.2.js"></script>
-    <script src="js/easeljs/display/Shadow.js"></script>
-    <script src="js/easeljs/display/DisplayObject.4.2.js"></script>
-    <script src="js/easeljs/display/Container.4.2.js"></script>
-    <script src="js/easeljs/display/Stage.4.2.js"></script>
-    <script src="js/easeljs/display/Bitmap.js"></script>
-    <script src="js/easeljs/display/BitmapAnimation.4.2.js"></script>
-    <script src="js/easeljs/utils/Ticker.js"></script>
-    <script src="js/easeljs/geom/Rectangle.4.2.js"></script>
-    <script src="js/entrance.js"></script>
-    <!-- End EaselJS Imports -->
     <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
   <body>
