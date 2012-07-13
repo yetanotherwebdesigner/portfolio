@@ -26,11 +26,17 @@
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
     <!--[if lte IE 8]><script src="js/libs/html5shiv.js"></script><script src="js/libs/respond.min.js"></script><![endif]-->   
     <!--[if (lt IE 9) & (!IEMobile)]>
-	<script src="js/libs/selectivizr-min.js"></script>
-	<![endif]-->
-    <!-- html5 & css3 features for less capable browsers
-    <script src="js/libs/modernizr-2.0.6.min.js"></script>-->
+    <script src="js/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    <script src="js/libs/modernizr.canvas.js"></script>    
+    <script src="js/yepnope.1.5.4-min.js"></script>
     <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>
+    <script>yepnope({
+      test:Modernizr.canvas,
+      yep:["js/easeljs/utils/UID.4.2.js","js/easeljs/geom/Matrix2D.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/utils/SpriteSheetUtils.4.2.js","js/easeljs/display/SpriteSheet.4.2.js","js/easeljs/display/Shadow.js","js/easeljs/display/DisplayObject.4.2.js","js/easeljs/display/Container.4.2.js","js/easeljs/display/Stage.4.2.js","js/easeljs/display/Bitmap.4.2.js","js/easeljs/display/BitmapAnimation.4.2.js","js/easeljs/utils/Ticker.js","js/easeljs/geom/Rectangle.4.2.js","js/entrance.js"],
+      nope:"css/polyfill.css",
+      complete:function(){if(Modernizr.canvas) init();}
+      });</script>
     <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
   <body>
@@ -46,7 +52,7 @@
       </nav> 
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
-    <canvas></canvas>
+    <canvas></canvas><a id="y-gplus" class="inner-tooltip-invoke" title="Find Me on Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"></a>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.tools.min.js"></script>
     <script src="js/yawd.js"></script>
