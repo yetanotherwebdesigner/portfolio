@@ -5,18 +5,18 @@ screen_height,
 bmpAnimation,
 bmpAnimationIdle,
 numImagesLoaded=0,
-imgMonsterARun=new Image(),imgMonsterAIdle=new Image();
+imgYRun=new Image(),imgYIdle=new Image();
 function init(){
     canvas=document.getElementsByTagName("canvas")[0];
     canvas.width=screen.width-17;
     canvas.height=64;
-    imgMonsterARun.onload=handleImageLoad;
-    imgMonsterARun.onerror=handleImageError;
-    imgMonsterARun.src="/images/YRun2.png";
+    imgYRun.onload=handleImageLoad;
+    imgYRun.onerror=handleImageError;
+    imgYRun.src="http://cdn.yetanotherwebdesigner.com/images/y-run.png";
 
-    imgMonsterAIdle.onload=handleImageLoad;
-    imgMonsterAIdle.onerror=handleImageError;
-    imgMonsterAIdle.src="/images/YIdle2.png";
+    imgYIdle.onload=handleImageLoad;
+    imgYIdle.onerror=handleImageError;
+    imgYIdle.src="http://cdn.yetanotherwebdesigner.com/images/y-idle.png";
 }
 function reset(){
     stage.removeAllChildren();
@@ -39,7 +39,7 @@ function startGame(){
     //create spritesheet & assign associated data
     var spritesheet=new createjs.SpriteSheet({
 					//image to use
-					images:[imgMonsterARun],
+					images:[imgYRun],
 					//width,height,registration point of each sprite
 					frames:{width:64,height:64,regX:32,regY:32},
 					animations:{walk:[0,9,"walk",4]}//walk being the sequence from 0 to 9, after which go back to 'walk' again
@@ -58,14 +58,14 @@ function startGame(){
     bmpAnimation.gotoAndPlay("walk");
     //set up a shadow (ridiculously expensive)
     bmpAnimation.shadow=new Shadow("#72A4AD",0,3,1);
-    bmpAnimation.name="monster1";
+    bmpAnimation.name="y-run";
     bmpAnimation.direction="ltr";
     //set speed of animation
     bmpAnimation.vX=8;
     //initial x position of animation
     bmpAnimation.x=16;
     bmpAnimation.y=32;
-    //have each monster start at a specific frame
+    //have animation start at a specific frame
     bmpAnimation.currentFrame=10;
     stage.addChild(bmpAnimation);
     Ticker.addListener(window);
@@ -73,12 +73,12 @@ function startGame(){
     Ticker.setFPS(60);
 
     var spriteSheetIdle=new createjs.SpriteSheet({
-					    images:[imgMonsterAIdle],
+					    images:[imgYIdle],
 					    frames:{width:64,height:64,regX:32,regY:32},
-					    animations:{idle:[0,8,"idle"]}
+					    animations:{idle:[1,1,"idle"]}
 					});
     bmpAnimationIdle=new createjs.BitmapAnimation(spriteSheetIdle);
-    bmpAnimationIdle.name="monsteridle1";
+    bmpAnimationIdle.name="y-idle";
     bmpAnimationIdle.x=screen_width-64;
     bmpAnimationIdle.y=32;
     bmpAnimationIdle.shadow=new Shadow("#72A4AD",0,3,1);
