@@ -26,7 +26,7 @@ noscript{ display:none;/* hides Clicky */ }
 .holder p{ font-size:.9em;text-align:left;margin:1em;padding:0 25px 1em; }
 /* --------HOME--------*/
 canvas{ position:absolute;top:550px;left:0;z-index:100; }
-#canvas-link{ height:64px;width:64px;display:block;position:absolute;top:550px;right:32px;z-index:101; }
+a#y-gplus{ height:64px;width:64px;display:block;position:absolute;top:550px;right:32px;z-index:101; }
 #home p{font-size:14px;font-size:1.4rem;text-align:center;}
 #home #menu{ background:url("http://cdn.yetanotherwebdesigner.com/images/black_arrow.png") no-repeat -999px 0;width:724px;height:230px;margin:10em auto 1.25em;/* nullifies mobile css hereon */padding:0;}
 #home #menu a { text-indent:-9999px;display:block;float:left;margin:1em 2em 1em 2.5em;overflow:visible; }
