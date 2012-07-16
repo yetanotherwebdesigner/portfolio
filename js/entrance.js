@@ -7,9 +7,6 @@ bmpAnimationIdle,
 numImagesLoaded=0,
 imgYRun=new Image(),imgYIdle=new Image();
 function init(){
-    canvas=document.getElementsByTagName("canvas")[0];
-    canvas.width=screen.width-17;
-    canvas.height=64;
     imgYRun.onload=handleImageLoad;
     imgYRun.onerror=handleImageError;
     imgYRun.src="http://cdn.yetanotherwebdesigner.com/images/y-run.png";
