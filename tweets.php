@@ -26,16 +26,12 @@
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
     
-    <!--[if lte IE 8]><script src="js/libs/html5shiv.js"></script><script src="js/libs/respond.min.js"></script><![endif]-->     
-    
+    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
 	<![endif]-->
-    
-    <!-- html5 & css3 features for less capable browsers -->
-    <!--<script src="js/libs/modernizr-2.0.6.min.js"></script>-->
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-    <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>    
+    <script src="js/libs/modernizr.canvas.js"></script>        
+    <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" />
   </head>
   <body>
     <h1 class="title"><a href="/">Yet Another Web Designer</a></h1>
@@ -52,7 +48,7 @@
 	  <div class="scroll-pane">
 	    <div class="tweet holder content"></div>
 	  </div>
-	  <a title="Visit my Twitter page" class="inner-tooltip-invoke" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30" src="images/twitter-small.png" alt="Small Twitter logo"/></a>
+	  <a title="Visit my Twitter page" class="inner-tooltip-invoke" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30" src="http://cdn.yetanotherwebdesigner.com/images/twitter-small.png" alt="Small Twitter logo"/></a>
 	</div><!-- ends .organizer holder-->
       </div><!-- ends #organizer-wrapper-->
       <nav id="menu">
@@ -62,24 +58,20 @@
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
     <div class="error"><p>Javascript has to be enabled for the tweets to be loaded. Please enable Javascript on your browser and try again. Alternatively, you may visit my Twitter page by clicking on the Twitter logo.</p></div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.jscrollpane.min.js"></script>
-    <script src="js/jquery.tweet.js"></script>
-    <script>$(".tweet").tweet({username:"yetanotherwebd",count:3,refresh_interval:10,loading_text:"loading tweets..."});</script>
-    <script src="js/jquery.tools.min.js"></script>
-    <script src="js/yawd.js"></script>
-    <script>$(document).ready(function(){
+    <script>yepnope({
+      load:["js/jquery.min.js","js/jquery.jscrollpane.min.js","js/jquery.tweet.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+      complete:function(){
+      $j("#menu a[title]").tooltip({effect:"fade",opacity:.9, delay:5});
+      $(".tweet").tweet({username:"yetanotherwebd",count:3,refresh_interval:10,loading_text:"loading tweets..."});
       $(".scroll-pane").bind(
-				'jsp-initialised',
-				function(event, isScrollable)
-				{
+      'jsp-initialised',
+      function(event, isScrollable){
       $j(".jspDrag").attr( 'title', 'Drag Me!' ).addClass("inner-tooltip-invoke");$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
-				}
-			);
-      $(".scroll-pane").jScrollPane({verticalDragMinHeight:200})
+      });
+      $(".scroll-pane").jScrollPane({verticalDragMinHeight:200});
+      }
       });
     </script>
-    <script src="//static.getclicky.com/js"></script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
   </body>

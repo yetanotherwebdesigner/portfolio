@@ -26,28 +26,19 @@
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
     
-    <!--[if lte IE 8]><script src="js/libs/html5shiv.js"></script><script src="js/libs/respond.min.js"></script><![endif]-->     
-
+    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
 	<![endif]-->
-    
-    <!-- html5 & css3 features for less capable browsers -->
-    <!--<script src="js/libs/modernizr-2.0.6.min.js"></script>-->
-    <script>document.getElementsByTagName("html")[0].setAttribute("class","js");</script>
-    <script src="js/jquery.min.js"></script> 
-    <script src="js/jquery.cycle.min.js"></script>    
-    <script src="js/jquery.tools.min.js"></script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-    
+    <script src="js/libs/modernizr.canvas.js"></script>        
+    <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
   <body>
     <h1 class="title"><a href="/">Yet Another Web Designer</a></h1> 
     <article class="content" id="snapshots"> 
       <div class="slideshow"> 
 	<div class="polaroid holder"> 
-	  <img src="images/gh2-screenshot.jpg" alt="Screenshot of GH-2" title="GH-2 Home" /> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/gh2-screenshot.jpg" alt="Screenshot of GH-2" title="GH-2 Home" /> 
 	  <h2><a class="inner-tooltip-invoke" href="http://www.gh-2.net" title="GH-2 Home">GH-2</a></h2> 
 	  <p>A product site for one of Pure Science Supplements' flagship product, GH-2. This is a makeover from the previous text-heavy, plain design to a more
 	  engaging design. Tags: HTML5, CSS3, Cufon</p> 
@@ -56,7 +47,7 @@
 	  </div>
 	</div>
 	<div class="polaroid holder"> 
-	  <img src="images/yawd-screenshot.jpg" alt="Screenshot of Yet Another Web Designer's Homepage" title="I.e. the site you're browsing" /> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/yawd-screenshot.jpg" alt="Screenshot of Yet Another Web Designer's Homepage" title="I.e. the site you're browsing" /> 
 	  <h2><a class="inner-tooltip-invoke" href="/" title="I.e. the site you are browsing">Yet Another Web Designer</a></h2> 
 	  <p>A personal project that entails collecting some of my previous work,  my tweets on web design & development, as well as some experimentation. Tags: Responsive Design, Twitter API, Google Web Fonts</p> 
 	  <div class="arrows"> 
@@ -65,7 +56,7 @@
 
 	</div><!-- ends .polaroid--> 
 	<div class="polaroid holder"> 
-	  <img src="images/ak-screenshot.jpg" alt="Screenshot of Amber KNowles Homepage" title="Amber Knowles Home" /> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/ak-screenshot.jpg" alt="Screenshot of Amber KNowles Homepage" title="Amber Knowles Home" /> 
 	  <h2><a class="inner-tooltip-invoke" target="blank" href="http://www.amberknowles.com" title="Visit Amber Knowles">Amber Knowles</a></h2> 
 	  <p>A portfolio site that showcases the photographer's works. She has come up with the designs and requested me to turn them into a Wordpress site. Tags: Javascript, Wordpress, Cufon, SEO</p> 
 	  <div class="arrows"> 
@@ -73,7 +64,7 @@
 	  </div> 
 	</div><!-- ends .polaroid-->       
 	<div class="polaroid holder"> 
-	  <img src="images/es-screenshot.jpg" alt="Screenshot of ES Lifestyle" title="ES Lifestyle Home" /> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/es-screenshot.jpg" alt="Screenshot of ES Lifestyle" title="ES Lifestyle Home" /> 
 	  <h2>ES Lifestyle</h2> 
 	  <p>A fashion project at Notion Bank. Contribution includes layout design, Flash movies, jQuery slideshows, and product ads design. Tags: Flash, jquery, Photoshop, CSS3, HTML 5</p> 
 	  <div class="arrows"> 
@@ -81,7 +72,7 @@
 	  </div>
 	</div><!-- ends .polaroid--> 
 	<div class="polaroid holder"> 
-	  <img src="images/ezy-screenshot.jpg" alt="Screenshot of EZY English" title="EZY English Home" /> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/ezy-screenshot.jpg" alt="Screenshot of EZY English" title="EZY English Home" /> 
 	  <h2>EZY English</h2> 
 	  <p>A squeezpage that worked hand in hand with a Google Adwords campaign to sell subscription to an educational e-magazine to English learners in Japan. Tags: Wordpress, YUI, EDM, Adwords</p> 
 	  <div class="arrows"> 
@@ -96,9 +87,13 @@
     </article> 
     <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
     <div class="error"><p>Javascript has to be enabled for the portfolio to be loaded. Please enable Javascript on your browser and try again.</p></div>
-    <script src="js/yawd.js"></script>
-    <script>$(document).ready(function(){$(".slideshow").cycle({fx:'fade',speed:'slow',timeout:0,next:'.next',prev: '.prev'});});</script>
-    <script src="//static.getclicky.com/js"></script>
+    <script>yepnope({
+      load:["js/jquery.min.js","js/jquery.cycle.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+      complete:function(){
+      $j("#menu a[title]").tooltip({effect:"fade",opacity:.9, delay:5});$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
+      $(".slideshow").cycle({fx:'fade',speed:'slow',timeout:0,next:'.next',prev: '.prev'});
+      }
+      });</script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
   </body>

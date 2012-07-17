@@ -18,16 +18,23 @@
 * GOOD TO HAVE
 
 ** Portfolio > inner tooltip for arrows
+** DONE load tooltip images 1st with other bg image for faster load time
+   CLOSED: [2012-07-17 Tue 13:04]
 
-** load tooltip images 1st with other bg image for faster load time
-
+   used background-image css instead to preload images
+   
 ** Tweets > load more images as click on twitter logo
 
 ** 'chuck' sound on postcard sent
 
-** IE8 black border around tooltip
+** DONE IE8 black border around tooltip
+   CLOSED: [2012-07-17 Tue 13:04]
 
    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */zoom:1;background:transparent;
 
+** DONE improve speed of loading
+   CLOSED: [2012-07-17 Tue 13:04]
 
-** improve speed of loading
+   Used amazon cloudfront + yepnope to improve speed
+
+** TODO IE simple tooltip 2 black dots ugly   
