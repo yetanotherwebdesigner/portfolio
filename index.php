@@ -48,8 +48,8 @@
     <script>yepnope({
       test:Modernizr.canvas,
       yep:["js/easeljs/utils/UID.4.2.js","js/easeljs/geom/Matrix2D.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/utils/SpriteSheetUtils.4.2.js","js/easeljs/display/SpriteSheet.4.2.js","js/easeljs/display/Shadow.js","js/easeljs/display/DisplayObject.4.2.js","js/easeljs/display/Container.4.2.js","js/easeljs/display/Stage.4.2.js","js/easeljs/display/Bitmap.4.2.js","js/easeljs/display/BitmapAnimation.4.2.js","js/easeljs/utils/Ticker.js","js/easeljs/geom/Rectangle.4.2.js","js/entrance.js"],
-      both:["js/canvasInit.js","js/jquery.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
-      complete:function(){if(Modernizr.canvas) init();}
+      both:["js/jquery.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+      complete:function(){if(Modernizr.canvas) init();$j("#menu a[title]").tooltip({effect:"fade",opacity:.9, delay:5});$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});}
       });</script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>

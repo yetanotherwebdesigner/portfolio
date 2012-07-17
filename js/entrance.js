@@ -7,6 +7,9 @@ bmpAnimationIdle,
 numImagesLoaded=0,
 imgYRun=new Image(),imgYIdle=new Image();
 function init(){
+    canvas=document.getElementsByTagName("canvas")[0];
+    canvas.width=screen.width-17;
+    canvas.height=64;
     $("canvas").after('<a id="y-gplus" class="inner-tooltip-invoke" title="Find Me on Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"></a>');
 
     imgYRun.onload=handleImageLoad;
