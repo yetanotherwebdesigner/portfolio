@@ -130,8 +130,8 @@ h2.fourofour{ font-family:Lucida Sans Unicode,Lucida Grande,sans-serif; }
 .no-js #tweets+.copyright+div.error{ top:-400px;position:relative;z-index:7;/* nullifies mobile css */margin-top:0;}
 .no-js div.error p{ text-align:center;font-size:16px;font-size:1.6rem;font-weight:bold;width:450px;margin:0 auto;color:#4d4d4d;}
 /* --------IE-------- */
-.lt-ie9 .inner-tooltip {background:transparent url("/images/white_arrow_simple.png") no-repeat 0 0;}
-.le-ie9 .copyright{ background:transparent url("/images/white_arrow_simple.png") no-repeat -999px 0;margin:4em 0 0; }
+.lt-ie9 .inner-tooltip {background:transparent url("http://cdn.yetanotherwebdesigner.com/images/white_arrow_simple.png") no-repeat 0 0;}
+.le-ie9 .copyright{ background:transparent url("http://cdn.yetanotherwebdesigner.com/images/white_arrow_simple.png") no-repeat -999px 0;margin:4em 0 0; }
 .ie7 #home p{ width:560px;margin-bottom:1.6em; }
 .ie7 .organizer p{ width:400px; }
 .ie7 #message #menu,.ie7 #tweets #menu,.ie7 #snapshots #menu{ margin-left:-487px;max-width:981px;top:28em;}
