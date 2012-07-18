@@ -68,7 +68,7 @@
 	<a href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
       </nav> 
     </article> 
-    <div class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></div>
+    <div class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></div>
     <script>yepnope({
       load:["js/jquery.min.js","js/jquery.validate.min.js","js/jquery.tools.min.js","js/yawd.js","js/ajax-submit.js","//static.getclicky.com/js"],
       complete:function(){

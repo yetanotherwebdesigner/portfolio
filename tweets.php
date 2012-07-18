@@ -56,7 +56,7 @@
 	<a href="contact.php" id="contact-small" title="contact">Contact</a>
       </nav>
     </article>
-    <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
+    <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
     <div class="error"><p>Javascript has to be enabled for the tweets to be loaded. Please enable Javascript on your browser and try again. Alternatively, you may visit my Twitter page by clicking on the Twitter logo.</p></div>
     <script>yepnope({
       load:["js/jquery.min.js","js/jquery.jscrollpane.min.js","js/jquery.tweet.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],

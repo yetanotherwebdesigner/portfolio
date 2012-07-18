@@ -43,7 +43,7 @@
 	<a href="contact.php" class="menu" id="contact" title="Contact">Contact</a>
       </nav> 
     </article>
-    <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
+    <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
     <canvas><a class="inner-tooltip-invoke" title="Find Me on Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"><img src="images/y-gplus.png" width="64" height="64" alt="The letter Y, with Google Plus icon on it."></a></canvas>
     <script>yepnope({
       test:Modernizr.canvas,

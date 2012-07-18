@@ -20,15 +20,15 @@
   <!-- initial-scale=1.0 prevents default zooming of pages-->
 
   <!-- For all browsers -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <!-- For progressively larger displays -->
-  <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
-  <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
-    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
+  <link rel="stylesheet" media="only screen and (min-width: 320px)" href="/css/mobile.css">
+  <link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/desktop.css">
+    <!--[if lte IE 8]><script src="/js/libs/respond.min.js"></script><![endif]-->     
   <!--[if (lt IE 9) & (!IEMobile)]>
-      <script src="js/libs/selectivizr-min.js"></script>
+      <script src="/js/libs/selectivizr-min.js"></script>
       <![endif]-->
-  <script src="js/libs/modernizr.canvas.js"></script>    
+  <script src="/js/libs/modernizr.canvas.js"></script>    
   <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
 </head> 
 <body> 
@@ -43,9 +43,9 @@
       <a class="menu" id="contact" href="contact.php" title="Contact">Contact</a> 
     </nav> 
   </article>
-  <footer class="copyright"><p>Copyright 2012 &copy; Teo Wei Pin, Anthony&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/jp" class="inner-tooltip-invoke" title="View this site in Japanese">日本語</a>&nbsp;|&nbsp;<a href="http://www.yetanotherwebdesigner.com/ch" class="inner-tooltip-invoke" title="View this site in Chinese">中文</a></p></footer>
+  <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
   <script>yepnope({
-    load:["js/jquery.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+    load:["/js/jquery.min.js","/js/jquery.tools.min.js","/js/yawd.js","//static.getclicky.com/js"],
     complete:function(){
     $j("#menu a[title]").tooltip({effect:"fade",opacity:.9,
     delay:5});$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
