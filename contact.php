@@ -62,7 +62,7 @@
 	  </form>
 	</div>
       </div><!-- ends .postcard -->
-      <div class="postbox"></div>
+      <div id="hiddenPostbox" class="postbox"></div>
       <nav id="menu">
 	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
 	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
