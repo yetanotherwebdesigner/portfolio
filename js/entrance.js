@@ -10,7 +10,7 @@ function init(){
     canvas=document.getElementsByTagName("canvas")[0];
     canvas.width=screen.width-17;
     canvas.height=64;
-    $("canvas").after('<a id="y-gplus" class="inner-tooltip-invoke" title="Find Me on Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"></a>');
+    $("canvas").after('<a id="y-gplus" class="tooltips" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"></a>');
 
     imgYRun.onload=handleImageLoad;
     imgYRun.onerror=handleImageError;
@@ -81,7 +81,7 @@ function startGame(){
 					});
     bmpAnimationIdle=new createjs.BitmapAnimation(spriteSheetIdle);
     bmpAnimationIdle.name="y-idle";
-    bmpAnimationIdle.x=screen_width-64;
+    bmpAnimationIdle.x=screen_width-104;
     bmpAnimationIdle.y=32;
     bmpAnimationIdle.shadow=new Shadow("#72A4AD",0,3,1);
     bmpAnimationIdle.onClick=function(evt){window.location="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts";};
@@ -92,7 +92,7 @@ function handleImageError(e){
 }
 function tick(){
     //hit testing the screen width, else our sprite will disappear
-    if(bmpAnimation.x>=screen_width-64){
+    if(bmpAnimation.x>=screen_width-104){
 	//we've reached the right side of the screen
 	//We need to walk left now to go back to our initial position
 	bmpAnimation.direction="ltr";

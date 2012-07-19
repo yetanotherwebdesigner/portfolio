@@ -39,16 +39,15 @@
       <p>Thank you for your message. I will get back to you soon.</p>
       <div class="postbox"></div>
       <nav id="menu">
-	<a href="tweets.php" id="blog-small" title="Tweets">Yet Another Web Designer's Tweets</a>
-	<a href="portfolio.php" id="snapshots-small" title="Portfolio">Yet Another Web Designer's Portfolio</a>    
+	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Yet Another Web Designer's Tweets</a>
+	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Yet Another Web Designer's Portfolio</a>    
       </nav> 
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
     <script>yepnope({
       load:["js/jquery.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
       complete:function(){
-      $j("#menu a[title]").tooltip({effect:"fade",opacity:.9,
-      delay:5});$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
+      $j(".tooltips[title]").tooltip({effect:"fade",opacity:.9,delay:5});
       }
       });</script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>

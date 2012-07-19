@@ -56,7 +56,7 @@
 		<input name="email" type="text" id="email" size="30" class="required email" />
 	      </p>
 	      <p class="submit">
-		<input class="submit inner-tooltip-invoke" name="submit" type="submit" value="Send →" />
+		<input class="submit" name="submit" type="submit" value="Send →" />
 	      </p>
 	    </div>
 	  </form>
@@ -64,16 +64,15 @@
       </div><!-- ends .postcard -->
       <div class="postbox"></div>
       <nav id="menu">
-	<a href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
-	<a href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
+	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
+	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
       </nav> 
     </article> 
     <div class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></div>
     <script>yepnope({
       load:["js/jquery.min.js","js/jquery.validate.min.js","js/jquery.tools.min.js","js/yawd.js","js/ajax-submit.js","//static.getclicky.com/js"],
       complete:function(){
-      $j("#menu a[title]").tooltip({effect:"fade",opacity:.9,
-      delay:5});$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
+      $j(".tooltips[title]").tooltip({effect:"fade",opacity:.9,delay:5});
       $("textarea").focus();
       $("textarea").keypress(function(e){
       var tval=$("textarea").val(),tlength=tval.length,set=480,remain = parseInt(set - tlength);
