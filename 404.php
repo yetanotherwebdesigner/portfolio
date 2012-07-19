@@ -38,17 +38,16 @@
     <p>You may have clicked on a bad link, or mis-typed your URL.
       Re-orientate yourself by clicking on one of the three main sections below:</p>
     <nav id="menu"> 
-      <a class="menu" id="blog" href="tweets.php" title="Tweets">Tweets</a> 
-      <a class="menu" id="portfolio" href="portfolio.php" title="Portfolio">Portfolio</a> 
-      <a class="menu" id="contact" href="contact.php" title="Contact">Contact</a> 
+      <a class="tooltips" id="blog" href="/tweets.php" title="Tweets">Tweets</a> 
+      <a class="tooltips" id="portfolio" href="/portfolio.php" title="Portfolio">Portfolio</a> 
+      <a class="tooltips" id="contact" href="/contact.php" title="Contact">Contact</a> 
     </nav> 
   </article>
   <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
   <script>yepnope({
     load:["/js/jquery.min.js","/js/jquery.tools.min.js","/js/yawd.js","//static.getclicky.com/js"],
     complete:function(){
-    $j("#menu a[title]").tooltip({effect:"fade",opacity:.9,
-    delay:5});$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
+    $j("#menu a[title]").tooltip({effect:"fade",opacity:.9,delay:5});
     }
     });</script>
   <script>try{ clicky.init(66561433); }catch(e){}</script>
