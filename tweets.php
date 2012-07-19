@@ -48,12 +48,12 @@
 	  <div class="scroll-pane">
 	    <div class="tweet holder content"></div>
 	  </div>
-	  <a title="Visit my Twitter page" class="inner-tooltip-invoke" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30" src="http://cdn.yetanotherwebdesigner.com/images/twitter-small.png" alt="Small Twitter logo"/></a>
+	  <a title="Visit my Twitter page" id="twitter-home" href="http://twitter.com/yetanotherwebd"><img width="42" height="30" src="http://cdn.yetanotherwebdesigner.com/images/twitter-small.png" alt="Small Twitter logo"/></a>
 	</div><!-- ends .organizer holder-->
       </div><!-- ends #organizer-wrapper-->
       <nav id="menu">
-	<a href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>
-	<a href="contact.php" id="contact-small" title="contact">Contact</a>
+	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>
+	<a class="tooltips" href="contact.php" id="contact-small" title="Contact">Contact</a>
       </nav>
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
@@ -61,12 +61,11 @@
     <script>yepnope({
       load:["js/jquery.min.js","js/jquery.jscrollpane.min.js","js/jquery.tweet.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
       complete:function(){
-      $j("#menu a[title]").tooltip({effect:"fade",opacity:.9, delay:5});
       $(".tweet").tweet({username:"yetanotherwebd",count:3,refresh_interval:10,loading_text:"loading tweets..."});
       $(".scroll-pane").bind(
       'jsp-initialised',
       function(event, isScrollable){
-      $j(".jspDrag").attr( 'title', 'Drag Me!' ).addClass("inner-tooltip-invoke");$j(".inner-tooltip-invoke[title]").tooltip({effect:"fade",delay:5,tipClass:'inner-tooltip'});
+      $j(".jspDrag").attr( 'title', 'Drag Me!' ).addClass("tooltips");$j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});
       });
       $(".scroll-pane").jScrollPane({verticalDragMinHeight:200});
       }
