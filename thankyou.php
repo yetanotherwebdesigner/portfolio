@@ -39,8 +39,8 @@
       <p>Thank you for your message. I will get back to you soon.</p>
       <div class="postbox"></div>
       <nav id="menu">
-	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Yet Another Web Designer's Tweets</a>
-	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Yet Another Web Designer's Portfolio</a>    
+	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
+	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
       </nav> 
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>

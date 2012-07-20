@@ -24,7 +24,7 @@ noscript{ display:none;/* hides Clicky */ }
 .holder p{ font-size:.9em;text-align:left;margin:1em;padding:0 25px 1em; }
 /* --------HOME--------*/
 .canvas canvas{ position:absolute;top:550px;left:0;z-index:100; }
-.canvas a#y-gplus{ height:64px;width:64px;display:none;position:absolute;top:550px;right:72px;z-index:101; }
+.canvas a#y-gplus{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none;margin-top:0;/* nullifies mobile.css */ }
 .no-canvas canvas{ position:absolute;top:550px;right:72px;z-index:99; }
 .no-canvas canvas a,canvas img{ height:64px;width:64px;display:block;/* canvas fallback content */ }
 #home p{font-size:14px;font-size:1.4rem;text-align:center;}
@@ -115,7 +115,7 @@ p.name{ margin-top:54px; }
 input#name,input#email{ width:180px;max-width:180px;border-left:none;border-right:none;border-top:none;border-bottom:2px solid #4d4d4d;padding:0; }
 input[type="submit"]{ background:url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 1em 100px;border:none;padding:1em 0;font-weight:bold;font-size:20px;font-size:2rem;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;/* nullifies mobile css hereon */border-radius:0;color:#4d4d4d;}
 #cform label.error{ position:fixed;top:150px;color:#fff;background:#ff0000;left:40%;padding:10px;border-radius:5px;box-shadow:1px 1px 2px #333;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;letter-spacing:0px; }
-div.postbox{ width:364px;height:600px;top:0;position:absolute;margin:0 auto;padding:0;background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-huge.png") no-repeat 0 0;z-index:-1;}
+div.postbox{ width:364px;height:600px;top:0;position:absolute;margin:0 0 0 310px;padding:0;background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-huge.png") no-repeat 0 0;z-index:-1;}
 .no-js p.remain{ visibility:hidden; }
 /* --------THANKYOU-------- */
 .thankyou div.postbox{ top:45px;position:static;}

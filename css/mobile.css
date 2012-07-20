@@ -24,6 +24,7 @@ noscript{ display:none;/* hides Clicky */ }
 .holder h2{ text-align:center;margin:.5em;text-decoration:underline; }
 .holder p{ text-align:center;margin:1em;padding:0 0 1em; }
 /* --------HOME--------*/
+.canvas a#y-gplus{ height:64px;width:64px;display:block;margin-top:-170px;background:url("http://cdn.yetanotherwebdesigner.com/images/y-gplus.png") no-repeat 0 0; }
 #home p{font-size:14px;font-size:1.4rem;text-align:center;}
 #home #menu{ width:100%;left:0;bottom:0;padding:20px 0;}
 #home #menu #contact{ top:15px; }
