@@ -70,18 +70,34 @@
     </article> 
     <div class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></div>
     <script>yepnope({
-      load:["js/jquery.min.js","js/jquery.validate.min.js","js/jquery.tools.min.js","js/yawd.js","js/ajax-submit.js","//static.getclicky.com/js"],
+      load:["js/jquery.min.js","http://malsup.github.com/jquery.form.js","js/jquery.validate.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
       complete:function(){
       $j(".tooltips[title]").tooltip({effect:"fade",opacity:.9,delay:5});
       $("textarea").focus();
       $("textarea").keypress(function(e){
       var tval=$("textarea").val(),tlength=tval.length,set=480,remain = parseInt(set - tlength);
       $("p.remain span").text(remain);
-      if (remain <= 0 && e.which !== 0 && e.charCode !== 0) {$("textarea").val((tval).substring(0, tlength - 1));}
-      $("#cform").validate();
-      });
+      if ((remain <= 0) && (e.which !== 0) && (e.charCode !== 0)) {
+		     $("textarea").val((tval).substring(0, tlength - 1));
+		     }//end if
+		     });//end keypress
+		    $("#cform").validate({
+		     submitHandler: function(form) {
+		     $(form).ajaxSubmit({
+		     beforeSubmit:function(){$("p.submit input").css("background-position","1em 50%")},
+		     success: function(){
+		     $("div.postcard").animate({
+		     height:['toggle','swing'],width:['toggle','swing'],top:'153',left:'15'
+		     },400
+		     ).before("<p>Thank you for your message. I will get back to you soon.</p>");
+		     $("div.postbox").css("top","45px");$(".copyright").css("margin-top","650px");$("h1").focus();
+		     }
+		     });
+		     return false;// return false to prevent normal browser submit and page navigation 
+		     }
+		     });//ends validate
 		    }//ends complete
-		    });
+		    });//ends yepnope
 		     </script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>

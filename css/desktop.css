@@ -25,6 +25,7 @@ noscript{ display:none;/* hides Clicky */ }
 /* --------HOME--------*/
 .canvas canvas{ position:absolute;top:550px;left:0;z-index:100; }
 .canvas a#y-gplus{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none;margin-top:0;/* nullifies mobile.css */ }
+.canvas a#y-gplus{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none; }
 .no-canvas canvas{ position:absolute;top:550px;right:72px;z-index:99; }
 .no-canvas canvas a,canvas img{ height:64px;width:64px;display:block;/* canvas fallback content */ }
 #home p{font-size:14px;font-size:1.4rem;text-align:center;}
