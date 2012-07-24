@@ -1,0 +1,69 @@
+/* --------GLOBAL--------*/
+/* Google webfontloader begins */
+.wf-loading .holder, .wf-inactive .holder{ font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size:17px;font-size:1.7rem;letter-spacing:0;font-weight:normal; }
+/* Google webfontloader ends */
+html{ background:#add8e6;}
+body{ height:100%;width:80%;text-align:center;/* YAWD only */font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;/* YAWD default font */}
+.content{ margin:0 auto;color:darkslategray;}
+.copyright{ margin:2em 0; }
+.copyright p{ text-align:center;font-size:10px;font-size:1rem;color:#5c5c5c;}
+h1{ font-size:33px;font-size:3.3rem;margin:.5em 0;}
+.no-js h1.title{ text-indent:-999px;
+           a{ display:block;width:220px;height:80px;margin:16px auto;background:url("http://cdn.yetanotherwebdesigner.com/images/mobile-h1.png") no-repeat 0 0; }
+}
+h1 a:link,h1 a:visited,h1 a:hover,h1 a:active{ font-family:'Orbitron',Lucida Sans Unicode, Lucida Grande, sans-serif;text-decoration:none;color:#fff;}
+h2{ font-size:20px;font-size:2rem; }
+h2 a{ font-weight:bold; }
+.holder h2+p{ font-size:14px;font-size:1.4rem; }/* intro text */
+p{ line-height:150%;/* white-space:pre-line; */ }
+a:link,a:visited{ outline:none;text-decoration:underline;color:#4d4d4d; }
+a:hover,a:active{ color:#4d4d4d; }
+a img{ border:none; }
+noscript{ display:none;/* hides Clicky */ }
+/* jQuery Toolstooltip styling */
+.tooltip{text-indent:-9999px;background:transparent;}
+.inner-tooltip {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;background:transparent url("..http://cdn.yetanotherwebdesigner.com/images/white_arrow.png") no-repeat 0 0;font-weight:normal;font-size:.9em;text-transform:small-caps;height:70px;width:120px;padding:20px 20px 20px 12px;color:#333;z-index:9;}
+/* ends jQuery Toolstooltip styling */
+.holder h2{ text-align:center;margin:.5em;text-decoration:underline; }
+.holder p{ text-align:center;margin:1em;padding:0 0 1em; }
+/* --------HOME--------*/
+.canvas a#y-gplus{ height:64px;width:64px;display:block;margin-top:-170px;background:url("http://cdn.yetanotherwebdesigner.com/images/y-gplus.png") no-repeat 0 0; }
+#home p{font-size:14px;font-size:1.4rem;text-align:center;}
+#home #menu{ width:100%;left:0;bottom:0;padding:20px 0;}
+#home #menu #contact{ top:15px; }
+#menu a:link,#menu a:visited { position:relative;text-decoration:none;width:108px;padding:10px 20px;margin:10px;border-radius:2.5px;box-shadow:0 1px 2px #000;z-index:0;}
+#menu a:hover,#home #menu a:active { z-index:1;}
+#blog,#blog-small { background:saddlebrown;color:#fff;}
+#portfolio,#snapshots-small{ background:#e6e6e6;color:#333; }
+#contact,#contact-small{ background:#ff0000;color:#fff; }
+/* --------PORTFOLIO--------*/
+#tweets,#snapshots,#message{ position:relative; }
+.slideshow{ width:100%;margin:0;padding:0;position:relative;}
+.slideshow img { display:block;width:95%;border:5px solid #e6e6e6;box-shadow:0 1px 1px #333;margin:5px auto 25px;padding:0;}
+.polaroid { color:#4d4d4d;}
+.polaroid+.polaroid{ display:none; }
+.no-js .polaroid h2,.no-js .polaroid p,.no-js .polaroid .arrows{ display:none;}
+.js .arrows{ height:50px; }
+.js .polaroid h2, .js .polaroid p{ display:block; }
+.arrows .prev, .arrows .next{ font-size:1.25em;text-decoration:none;margin:0 20px;background:#4d4d4d;color:#fff;border-radius:10px;padding:5px; }
+#snapshots #menu{ margin-top:200px; }
+/* --------TWEETS--------*/
+.tweet .tweet_list{ margin:0;padding:0;list-style-type:none; }
+.tweet .tweet_list li, .query .tweet_list li {margin:0 0 20px;padding:20px;background:saddlebrown;color:#fff;line-height:200%;box-shadow:1px 1px 2px #000;border-radius:5px; }
+.tweet .tweet_list li a, .query .tweet_list li a{color:#fff;background:#000;border-radius:10px;text-decoration:none;padding:5px;}
+.scroll-pane{position:relative;min-height:700px;}
+.no-js .scroll-pane{ min-height:150px; }
+#twitter-home{ display:inline-block;margin-bottom:50px; }
+/* --------CONTACT-------- */
+p.remain{ display:none; }
+input,textarea{ width:100%;background:transparent;border:1px solid #4d4d4d;margin:20px 0 0;border-radius:5px; }
+textarea{ min-height:200px; }
+input[type="submit"]{ background:#4d4d4d url("..http://cdn.yetanotherwebdesigner.com/images/loading-mobile.gif") no-repeat 1em 100px;color:#fff;padding:10px;border-radius:5px;font-weight:bold; }
+#cform label.error{ background:#ff0000;color:#fff;font-size:12px;font-size:1.2rem;padding:5px;border-radius:5px; }
+/* --------ERRORS,404--------*/
+.js div.error{ display:none; }
+.no-js div.error{ z-index:10;margin:0 auto;position:relative;}
+h2.fourofour{ font-family:Lucida Sans Unicode,Lucida Grande,sans-serif; }
+.no-js #snapshots+.copyright+div.error{ top:-250px; }
+.no-js #tweets+.copyright+div.error{ top:-350px; }
+.no-js div.error p{ text-align:center;font-size:14px;font-size:1.4rem;color:red;}

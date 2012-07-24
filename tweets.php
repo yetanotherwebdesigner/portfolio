@@ -57,7 +57,7 @@
       </nav>
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
-    <div class="error"><p>Javascript has to be enabled for the tweets to be loaded. Please enable Javascript on your browser and try again. Alternatively, you may visit my Twitter page by clicking on the Twitter logo.</p></div>
+    <div class="error"><p>Javascript has to be enabled for the tweets to be loaded. Please enable Javascript on your browser and try again. Alternatively, you may visit my Twitter page by clicking on the Twitter logo below.</p></div>
     <script>yepnope({
       load:["js/jquery.min.js","js/jquery.jscrollpane.min.js","js/jquery.tweet.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
       complete:function(){

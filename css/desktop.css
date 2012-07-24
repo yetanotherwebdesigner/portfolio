@@ -1,146 +1,748 @@
+/* Z-INDEXES
+.tooltip:10
+.canvas canvas 100 
+.canvas a#y-gplus 101
+.no-canvas canvas 99
+#message #menu,#tweets #menu,#snapshots #menu 20
+#ribbon-top 1
+#twitter-home 8
+#jspDrag 2
+div.postbox -1
+.no-js #snapshots+.copyright+div.error 7
+.no-js #tweets+.copyright+div.error 7      
+*/
+/* --------VARIABLE-------- */
 /* --------GLOBAL--------*/
 /* Google webfontloader begins */
-.wf-loading .holder, .wf-inactive .holder{ font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size:17px;font-size:1.7rem;letter-spacing:0;font-weight:normal; }
-.wf-active .holder p{ font-weight:bold;letter-spacing:2px;}
+.wf-loading .holder, .wf-inactive .holder {
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-size: 17px;
+  font-size: 1.7rem;
+  letter-spacing: 0;
+  font-weight: normal; }
+
+.wf-active .holder p {
+  font-weight: bold;
+  letter-spacing: 2px; }
+
 /* Google webfontloader ends */
-html{ background:#add8e6 url("http://cdn.yetanotherwebdesigner.com/images/bg-tile.png") repeat-x 0 0; }
-body{ height:100%;text-align:center;/* YAWD only */font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;/* nullifies mobile css */width:100%;}
-.content{ width:974px;margin:0 auto;color:darkslategray;}
-.copyright p{ text-align:center;font-size:10px;font-size:1rem;color:#5c5c5c;}
-h1{ font-size:49px;font-size:4.9rem;margin:.5em 0;}
-h1 a:link,h1 a:visited,h1 a:hover,h1 a:active{ font-family:'Orbitron',Lucida Sans Unicode, Lucida Grande, sans-serif;text-decoration:none;color:#fff;}
-h2{ font-size:20px;font-size:2rem; }
-h2 a{ font-weight:bold; }
-.holder h2+p{ font-size:18px;font-size:1.8rem; }/* intro text */
-p{ line-height:150%;white-space:pre-line; }
-a:link,a:visited{ outline:none;text-decoration:underline;color:#4d4d4d; }
-a:hover,a:active{ color:#4d4d4d; }
-a img{ border:none; }
-noscript{ display:none;/* hides Clicky */ }
+html {
+  background: #add8e6 url("http://cdn.yetanotherwebdesigner.com/images/bg-tile.png") repeat-x 0 0; }
+
+body {
+  height: 100%;
+  text-align: center;
+  /* YAWD only */
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  /* nullifies mobile css */
+  width: 100%; }
+
+.content {
+  width: 974px;
+  margin: 0 auto;
+  color: darkslategray; }
+
+.copyright p {
+  text-align: center;
+  font-size: 10px;
+  font-size: 1rem;
+  color: #5c5c5c; }
+
+h1 {
+  font-size: 49px;
+  font-size: 4.9rem;
+  margin: .5em 0; }
+
+.no-js h1.title {
+  text-indent: -9999px; }
+  .no-js h1.title a {
+    display: block;
+    height: 59px;
+    width: 714px;
+    margin: 24px auto;
+    background: url("http://cdn.yetanotherwebdesigner.com/images/desktop-h1.png") no-repeat 0 100%; }
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+  font-family: 'Orbitron',Lucida Sans Unicode, Lucida Grande, sans-serif;
+  text-decoration: none;
+  color: #fff; }
+
+h2 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+h2 a {
+  font-weight: bold; }
+
+.holder h2 + p {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+/* intro text */
+p {
+  line-height: 150%;
+  white-space: pre-line; }
+
+a:link, a:visited {
+  outline: none;
+  text-decoration: underline;
+  color: #4d4d4d; }
+
+a:hover, a:active {
+  color: #4d4d4d; }
+
+a img {
+  border: none; }
+
+noscript {
+  display: none;
+  /* hides Clicky */ }
+
 /* jQuery Toolstooltip styling */
-.tooltip {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;display:none;background:transparent url("http://cdn.yetanotherwebdesigner.com/images/black_arrow.png") no-repeat 0 0;font-weight:normal;font-size:1.5em;text-transform:small-caps;height:91px;width:160px;padding:25px 25px 25px 15px;color:#e5e5e5;z-index:10;text-indent:0;}
-.holder { font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;}
-.holder h2{ font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;text-align:center;margin:.5em;letter-spacing:1px;text-decoration:underline; }
-.holder p{ font-size:.9em;text-align:left;margin:1em;padding:0 25px 1em; }
+.tooltip {
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  display: none;
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/black_arrow.png") no-repeat 0 0;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-transform: small-caps;
+  height: 91px;
+  width: 160px;
+  padding: 25px 25px 25px 15px;
+  color: #e5e5e5;
+  z-index: 10;
+  text-indent: 0; }
+
+.holder {
+  font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif; }
+
+.holder h2 {
+  font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;
+  text-align: center;
+  margin: .5em;
+  letter-spacing: 1px;
+  text-decoration: underline; }
+
+.holder p {
+  font-size: .9em;
+  text-align: left;
+  margin: 1em;
+  padding: 0 25px 1em; }
+
 /* --------HOME--------*/
-.canvas canvas{ position:absolute;top:550px;left:0;z-index:100; }
-.canvas a#y-gplus{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none;margin-top:0;/* nullifies mobile.css */ }
-.canvas a#y-gplus{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none; }
-.no-canvas canvas{ position:absolute;top:550px;right:72px;z-index:99; }
-.no-canvas canvas a,canvas img{ height:64px;width:64px;display:block;/* canvas fallback content */ }
-#home p{font-size:14px;font-size:1.4rem;text-align:center;}
-#home #menu{ background:url("http://cdn.yetanotherwebdesigner.com/images/black_arrow.png") no-repeat -999px 0;width:724px;height:230px;margin:10em auto 1.25em;/* nullifies mobile css hereon */padding:0;}
-#home #menu a { text-indent:-9999px;display:block;float:left;margin:1em 37px 1em 37px;overflow:visible; }
-#home #menu a:link,#home #menu a:visited { padding:0;border-radius:0;box-shadow:0 0 0 #000;width:167px;/* nullifies mobile css */}
-#home #menu #contact{ top:0; }
-#blog { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer.png") no-repeat 0 0;width:167px;height:220px;left:10px;/* makes up for difference in width between postbox (127px) and the rest (167px)) */}
-#portfolio { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid.png") no-repeat 0 0px;width:167px;height:220px;left:10px;/* makes up for difference in width between postbox (127px) and the rest (167px))*/ }
-#contact { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox.png") no-repeat 0 0;width:167px;height:230px; }
+.canvas canvas {
+  position: absolute;
+  top: 550px;
+  left: 0;
+  z-index: 100; }
+
+.canvas a#y-gplus {
+  display: none;
+  position: absolute;
+  top: 550px;
+  right: 72px;
+  z-index: 101;
+  background-image: none;
+  margin-top: 0;
+  /* nullifies mobile.css */ }
+
+.no-js canvas, .no-canvas canvas {
+  position: absolute;
+  top: 550px;
+  right: 72px;
+  z-index: 99; }
+
+.no-js canvas, .no-canvas canvas a, canvas img {
+  height: 64px;
+  width: 64px;
+  display: block;
+  /* canvas fallback content */ }
+
+#home p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center; }
+
+#home #menu {
+  background: url("http://cdn.yetanotherwebdesigner.com/images/black_arrow.png") no-repeat -999px 0;
+  width: 724px;
+  height: 230px;
+  margin: 10em auto 1.25em;
+  /* nullifies mobile css hereon */
+  padding: 0; }
+
+#home #menu a {
+  text-indent: -9999px;
+  display: block;
+  float: left;
+  margin: 1em 37px 1em 37px;
+  overflow: visible; }
+
+#home #menu a:link, #home #menu a:visited {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 0 #000;
+  width: 167px;
+  /* nullifies mobile css */ }
+
+#home #menu #contact {
+  top: 0; }
+
+#blog {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer.png") no-repeat 0 0;
+  width: 167px;
+  height: 220px;
+  left: 10px;
+  /* makes up for difference in width between postbox (127px) and the rest (167px)) */ }
+
+#portfolio {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid.png") no-repeat 0 0px;
+  width: 167px;
+  height: 220px;
+  left: 10px;
+  /* makes up for difference in width between postbox (127px) and the rest (167px))*/ }
+
+#contact {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox.png") no-repeat 0 0;
+  width: 167px;
+  height: 230px; }
+
 /* --------PORTFOLIO--------*/
-#tweets,#snapshots,#message{ position:relative; }
-#snapshots #menu{ margin-top:0; }
-.slideshow{ width:570px;height:600px;margin:1.25em 214px 2.5em 201px;padding:0;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/polaroid-bg.png") repeat 0 0;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;}
-.slideshow img { display:block;background-color:#808080;width:520px;height:347px;margin:25px;padding:0;border:2px solid #c7c7c7;/* nullifies mobile css hereon */box-shadow:0 0 0 #333;}
-.polaroid { color:#4d4d4d;overflow:hidden;height:583px;/* necc. for polaroid to define height to accomodate its content */background-image:inherit;}
-.no-js .polaroid h2,.no-js .polaroid p,.no-js .polaroid .arrows{ display:none;}
-.polaroid img[alt]{ color:#808080; }
-.js .polaroid h2{ letter-spacing:1px; }
-.js .polaroid p{ letter-spacing:2px; }
-.js .arrows{ display:inline; }
-.js .polaroid h2, .js .polaroid p{ display:block; }
-.arrows .prev, .arrows .next{ font-size:30px;font-size:3rem;font-weight:bold;text-decoration:none;margin:0 20px;/* nullifies mobile css hereon */background:transparent;color:#4d4d4d;border-radius:0;padding:0; }
-.prev{ position:absolute;top:400px;left:20px; }
-.next{ position:absolute;top:400px;right:20px; }
-#message #menu,#tweets #menu,#snapshots #menu{ position:absolute;top:22em;width:100%;z-index:20;}
-#message #menu a,#tweets #menu a,#snapshots #menu a { text-indent:-9999px;}
-#message #menu a:link,#message #menu a:visited,#tweets #menu a:link,#tweets #menu a:visited,#snapshots #menu a:link,#snapshots #menu a:visited{ position:absolute;margin:0;padding:0;border-radius:0;box-shadow:0 0 0 #000;/* nullifies mobile css */}
-#contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;right:47px;}
+#tweets, #snapshots, #message {
+  position: relative; }
+
+#snapshots #menu {
+  margin-top: 0; }
+
+.slideshow {
+  width: 570px;
+  height: 600px;
+  margin: 1.25em 214px 2.5em 201px;
+  padding: 0;
+  background: white url("http://cdn.yetanotherwebdesigner.com/images/polaroid-bg.png") repeat 0 0;
+  box-shadow: 0 3px 1px #666;
+  -moz-box-shadow: 0 3px 3px #666;
+  -webkit-box-shadow: 0 3px 1px #666;
+  overflow: hidden;
+  position: relative; }
+
+.slideshow img {
+  display: block;
+  background-color: #808080;
+  width: 520px;
+  height: 347px;
+  margin: 25px;
+  padding: 0;
+  border: 2px solid #c7c7c7;
+  /* nullifies mobile css hereon */
+  box-shadow: 0 0 0 #333; }
+
+.polaroid {
+  color: #4d4d4d;
+  overflow: hidden;
+  height: 583px;
+  /* necc. for polaroid to define height to accomodate its content */
+  background-image: inherit; }
+
+.no-js .polaroid h2, .no-js .polaroid p, .no-js .polaroid .arrows {
+  display: none; }
+
+.polaroid img[alt] {
+  color: #808080; }
+
+.js .polaroid h2 {
+  letter-spacing: 1px; }
+
+.js .polaroid p {
+  letter-spacing: 2px; }
+
+.js .arrows {
+  display: inline; }
+
+.js .polaroid h2, .js .polaroid p {
+  display: block; }
+
+.arrows .prev, .arrows .next {
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 20px;
+  /* nullifies mobile css hereon */
+  background: transparent;
+  color: #4d4d4d;
+  border-radius: 0;
+  padding: 0; }
+
+.prev {
+  position: absolute;
+  top: 400px;
+  left: 20px; }
+
+.next {
+  position: absolute;
+  top: 400px;
+  right: 20px; }
+
+#message #menu, #tweets #menu, #snapshots #menu {
+  position: absolute;
+  top: 22em;
+  width: 100%;
+  z-index: 20; }
+
+#message #menu a, #tweets #menu a, #snapshots #menu a {
+  text-indent: -9999px; }
+
+#message #menu a:link, #message #menu a:visited, #tweets #menu a:link, #tweets #menu a:visited, #snapshots #menu a:link, #snapshots #menu a:visited {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 0 #000;
+  /* nullifies mobile css */ }
+
+#contact-small {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;
+  width: 84px;
+  height: 115px;
+  position: absolute;
+  right: 47px; }
+
 /* --------TWEETS--------*/
-#tweets #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;left:45px;}
-#tweets #contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;right:36px;}
-#blog-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;left:54px;}
-#organizer-wrapper{ display:block;width:618px;height:642px;margin:1.25em auto 2.5em auto;padding:0;background:saddlebrown;border-top-left-radius:none;border-bottom-left-radius:none;border-bottom-right-radius:10px;border-top-right-radius:10px;border-left:2px solid #5e2f0d;box-shadow:0 2px 1px #000; }
-.organizer{ width:570px;height:600px;margin:0 0 0 29px;padding:0;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/organizer-ring.png") repeat-y -27px 0;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow:0 3px 1px #333;-moz-box-shadow:0 3px 1px #333;-webkit-box-shadow:0 3px 1px #333x;position:relative;top:25px;}
-.organizer h2{ padding-top:1em;}
-.organizer p{ text-align:center;}
-#ribbon-top{ display:block;height:330px;/* shorten to accomdate .jspdrag */width:30px;background:red url("http://cdn.yetanotherwebdesigner.com/images/tweets-ribbon.png") no-repeat 0 100%;position:absolute;top:-1px;right:20px;cursor:default;z-index:1;}
-.js #ribbon-top{ background-image:none; }
-#twitter-home{ position:absolute;top:520px;left:265px;z-index:8; } 
-.loading{ position:absolute;top:50px;left:155px;padding-left:32px;background:transparent url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 0px 2px;}
-.tweet{ width:470px;height:830px; }
+#tweets #snapshots-small {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;
+  width: 84px;
+  height: 110px;
+  position: absolute;
+  left: 45px; }
+
+#tweets #contact-small {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;
+  width: 84px;
+  height: 115px;
+  position: absolute;
+  right: 36px; }
+
+#blog-small {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer-small.png") no-repeat 50% 0;
+  width: 84px;
+  height: 115px;
+  position: absolute;
+  left: 54px; }
+
+#organizer-wrapper {
+  display: block;
+  width: 618px;
+  height: 642px;
+  margin: 1.25em auto 2.5em auto;
+  padding: 0;
+  background: saddlebrown;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-left: 2px solid #5e2f0d;
+  box-shadow: 0 2px 1px #000; }
+
+.organizer {
+  width: 570px;
+  height: 600px;
+  margin: 0 0 0 29px;
+  padding: 0;
+  background: white url("http://cdn.yetanotherwebdesigner.com/images/organizer-ring.png") repeat-y -27px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 3px 1px #333;
+  -moz-box-shadow: 0 3px 1px #333;
+  -webkit-box-shadow: 0 3px 1px #333x;
+  position: relative;
+  top: 25px; }
+
+.organizer h2 {
+  padding-top: 1em; }
+
+.organizer p {
+  text-align: center; }
+
+#ribbon-top {
+  display: block;
+  height: 330px;
+  /* shorten to accomdate .jspdrag */
+  width: 30px;
+  background: red url("http://cdn.yetanotherwebdesigner.com/images/tweets-ribbon.png") no-repeat 0 100%;
+  position: absolute;
+  top: -1px;
+  right: 20px;
+  cursor: default;
+  z-index: 1; }
+
+.js #ribbon-top {
+  background-image: none; }
+
+#twitter-home {
+  position: absolute;
+  top: 520px;
+  left: 265px;
+  z-index: 8; }
+
+.loading {
+  position: absolute;
+  top: 50px;
+  left: 155px;
+  padding-left: 32px;
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 0px 2px; }
+
+.tweet {
+  width: 470px;
+  height: 830px; }
+
 /* tweet.js */
-.tweet .tweet_list{list-style-type:none;margin:0 0 0 -20px;padding:0;background-color:transparent;width:490px;}
-.tweet .tweet_list .awesome, #tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic {text-transform: uppercase; }
-.tweet .tweet_list li, .query .tweet_list li {font-weight:normal;font-size:1.5em;letter-spacing:1px;line-height:150%;height:250px;margin:0;padding:1.5em 3em 0 3.125em;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/drawn-circle.png") no-repeat 50px 0;transform: rotate(-2deg);-webkit-transform: rotate(-2deg);-moz-transform: rotate(-2deg);color:#4d4d4d;box-shadow:0 0 0 #000;border-radius:0; }
-.tweet .tweet_list li a, .query .tweet_list li a{color: red;background:#fff; }
-.tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even { }
-.tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {padding-right: .5em;float: left; }
-.tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img{vertical-align: middle; }
+.tweet .tweet_list {
+  list-style-type: none;
+  margin: 0 0 0 -20px;
+  padding: 0;
+  background-color: transparent;
+  width: 490px; }
+
+.tweet .tweet_list .awesome, #tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic {
+  text-transform: uppercase; }
+
+.tweet .tweet_list li, .query .tweet_list li {
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  line-height: 150%;
+  height: 250px;
+  margin: 0;
+  padding: 1.5em 3em 0 3.125em;
+  background: white url("http://cdn.yetanotherwebdesigner.com/images/drawn-circle.png") no-repeat 50px 0;
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  color: #4d4d4d;
+  box-shadow: 0 0 0 #000;
+  border-radius: 0; }
+
+.tweet .tweet_list li a, .query .tweet_list li a {
+  color: red;
+  background: #fff; }
+
+.tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {
+  padding-right: .5em;
+  float: left; }
+
+.tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
+  vertical-align: middle; }
+
 /* jscroll-pane */
-.jspContainer{overflow:hidden;position:relative}
-.jspPane{position:absolute}
-.jspVerticalBar{position:absolute;top:0;right:0;width:30px;height:100%}
-.jspHorizontalBar{position:absolute;bottom:0;left:0;width:490px;height:0}
-.jspVerticalBar *,.jspHorizontalBar *{margin:0;padding:0}
-.jspCap{display:none}
-.jspHorizontalBar .jspCap{float:left}
-.jspTrack{background-color:#FFF;position:relative}
-.jspDrag{background:red url("http://cdn.yetanotherwebdesigner.com/images/tweets-ribbon.png") no-repeat 0 100%;position:relative;top:0;left:0;cursor:pointer;z-index:2}
-.jspHorizontalBar .jspTrack,.jspHorizontalBar .jspDrag{float:left;height:100%}
-.jspArrow{background:#50506d;text-indent:-20000px;display:block;cursor:pointer}
-.jspArrow.jspDisabled{cursor:default;background:#80808d}
-.jspVerticalBar .jspArrow{height:16px}
-.jspHorizontalBar .jspArrow{width:16px;float:left;height:100%}
-.jspVerticalBar .jspArrow:focus{outline:none}
-.jspCorner{background:#fff;float:left;height:100%}
-* html .jspCorner{margin:0 -3px 0 0}
-.scroll-pane{width:490px;height:250px;position:relative;left:60px;overflow:hidden;outline:none;min-height:0;}
-.no-js #tweets+footer.copyright+div.error{ top:27em;left:20em;width:380px; }
+.jspContainer {
+  overflow: hidden;
+  position: relative; }
+
+.jspPane {
+  position: absolute; }
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%; }
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 490px;
+  height: 0; }
+
+.jspVerticalBar *, .jspHorizontalBar * {
+  margin: 0;
+  padding: 0; }
+
+.jspCap {
+  display: none; }
+
+.jspHorizontalBar .jspCap {
+  float: left; }
+
+.jspTrack {
+  background-color: #FFF;
+  position: relative; }
+
+.jspDrag {
+  background: red url("http://cdn.yetanotherwebdesigner.com/images/tweets-ribbon.png") no-repeat 0 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 2; }
+
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%; }
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer; }
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d; }
+
+.jspVerticalBar .jspArrow {
+  height: 16px; }
+
+.jspHorizontalBar .jspArrow {
+  width: 16px;
+  float: left;
+  height: 100%; }
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none; }
+
+.jspCorner {
+  background: #fff;
+  float: left;
+  height: 100%; }
+
+* html .jspCorner {
+  margin: 0 -3px 0 0; }
+
+.scroll-pane {
+  width: 490px;
+  height: 250px;
+  position: relative;
+  left: 60px;
+  overflow: hidden;
+  outline: none;
+  min-height: 0; }
+
+/* .no-js #tweets+footer.copyright+div.error{ top:27em;left:20em;width:380px; } */
 /* --------CONTACT-------- */
-.postcard{ width:570px;height:600px;margin:1.25em auto 2.5em;padding:0;background:#fff;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/yetanotherwebdesigner-stamp.png") no-repeat 95% 5%; }
-#message #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;right:58px;}
-#cform{ margin-top:60px;}
-#cform label[for="message"]{ display:block;padding-bottom:34px; }
-#cform h1{ font-size:100%;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif; }
-#cform label{ font-weight:bold; }
-#postcard-left{ height:540px;float:left;width:360px; }
-#postcard-right{ float:left; width:210px; }
-input{ font-size:14px;font-size:1.4rem; }
-input,textarea{ border-radius:0;margin:0;/* nullifies mobile css */ }
-textarea[name="message"]{ font-size:18px;font-size:1.8rem;resize:none;width:300px;max-width:300px;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/textarea-bg.png") repeat-y 0 0;border:none;height: 430px;margin: 0 30px;padding: 0;resize:none;overflow:hidden;}
-.holder p.remain{ font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-weight:normal;text-align:center;color:#c7c7c7;padding:0;margin:100px 0 0 0;/* nullifies mobile css hereon  */display:block; }
-p.remain span{ font-size:50px;font-size:5rem;color:pink;font-weight:bold; }
-p.name,p.email,p.submit{ padding:0;margin:0; }
-p.name{ margin-top:54px; }
-#cform label[for="name"],#cform label[for="email"]{ display:block;padding:0;}
-input#name,input#email{ width:180px;max-width:180px;border-left:none;border-right:none;border-top:none;border-bottom:2px solid #4d4d4d;padding:0; }
-input[type="submit"]{ background:url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 1em 100px;border:none;padding:1em 0;font-weight:bold;font-size:20px;font-size:2rem;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;/* nullifies mobile css hereon */border-radius:0;color:#4d4d4d;}
-#cform label.error{ position:fixed;top:150px;color:#fff;background:#ff0000;left:40%;padding:10px;border-radius:5px;box-shadow:1px 1px 2px #333;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;letter-spacing:0px; }
-div.postbox{ width:364px;height:600px;top:0;position:absolute;margin:0 0 0 310px;padding:0;background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-huge.png") no-repeat 0 0;z-index:-1;}
-.no-js p.remain{ visibility:hidden; }
+.postcard {
+  width: 570px;
+  height: 600px;
+  margin: 1.25em auto 2.5em;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 3px 1px #666;
+  -moz-box-shadow: 0 3px 3px #666;
+  -webkit-box-shadow: 0 3px 1px #666;
+  overflow: hidden;
+  position: relative;
+  background: white url("http://cdn.yetanotherwebdesigner.com/images/yetanotherwebdesigner-stamp.png") no-repeat 95% 5%; }
+
+#message #snapshots-small {
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;
+  width: 84px;
+  height: 110px;
+  position: absolute;
+  right: 58px; }
+
+#cform {
+  margin-top: 60px; }
+
+#cform label[for="message"] {
+  display: block;
+  padding-bottom: 34px; }
+
+#cform h1 {
+  font-size: 100%;
+  font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif; }
+
+#cform label {
+  font-weight: bold; }
+
+#postcard-left {
+  height: 540px;
+  float: left;
+  width: 360px; }
+
+#postcard-right {
+  float: left;
+  width: 210px; }
+
+input {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+input, textarea {
+  border-radius: 0;
+  margin: 0;
+  /* nullifies mobile css */ }
+
+textarea[name="message"] {
+  font-size: 18px;
+  font-size: 1.8rem;
+  resize: none;
+  width: 300px;
+  max-width: 300px;
+  background: white url("http://cdn.yetanotherwebdesigner.com/images/textarea-bg.png") repeat-y 0 0;
+  border: none;
+  height: 430px;
+  margin: 0 30px;
+  padding: 0;
+  resize: none;
+  overflow: hidden; }
+
+.holder p.remain {
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #c7c7c7;
+  padding: 0;
+  margin: 100px 0 0 0;
+  /* nullifies mobile css hereon  */
+  display: block; }
+
+p.remain span {
+  font-size: 50px;
+  font-size: 5rem;
+  color: pink;
+  font-weight: bold; }
+
+p.name, p.email, p.submit {
+  padding: 0;
+  margin: 0; }
+
+p.name {
+  margin-top: 54px; }
+
+#cform label[for="name"], #cform label[for="email"] {
+  display: block;
+  padding: 0; }
+
+input#name, input#email {
+  width: 180px;
+  max-width: 180px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #4d4d4d;
+  padding: 0; }
+
+input[type="submit"] {
+  background: url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 1em 100px;
+  border: none;
+  padding: 1em 0;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;
+  /* nullifies mobile css hereon */
+  border-radius: 0;
+  color: #4d4d4d; }
+
+#cform label.error {
+  position: fixed;
+  top: 150px;
+  color: #fff;
+  background: #ff0000;
+  left: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #333;
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  letter-spacing: 0px; }
+
+div.postbox {
+  width: 364px;
+  height: 600px;
+  top: 0;
+  position: absolute;
+  margin: 0 0 0 310px;
+  padding: 0;
+  background: transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-huge.png") no-repeat 0 0;
+  z-index: -1; }
+
+.no-js p.remain {
+  visibility: hidden; }
+
 /* --------THANKYOU-------- */
-.thankyou div.postbox{ top:45px;position:static;}
-#message p{font-size:14px;font-size:1.4rem;text-align:center;}
-div.thankyou+.copyright{ margin:650px 0 0 0; }
+.thankyou div.postbox {
+  top: 45px;
+  position: static; }
+
+#message p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center; }
+
+div.thankyou + .copyright {
+  margin: 650px 0 0 0; }
+
 /* --------ERRORS,404--------*/
-.js div.error{ display:none; }
-h2.fourofour{ font-family:Lucida Sans Unicode,Lucida Grande,sans-serif; }
-.no-js #snapshots+.copyright+div.error{ top:-250px;position:relative;z-index:7;/* nullifies mobile css */margin-top:0;}
-.no-js #tweets+.copyright+div.error{ top:-400px;position:relative;z-index:7;/* nullifies mobile css */margin-top:0;}
-.no-js div.error p{ text-align:center;font-size:16px;font-size:1.6rem;font-weight:bold;width:450px;margin:0 auto;color:#4d4d4d;}
+.js div.error {
+  display: none; }
+
+.no-js div.error {
+  width: 370px; }
+  .no-js div.error p {
+    text-align: center;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #4d4d4d; }
+
+h2.fourofour {
+  font-family: Lucida Sans Unicode,Lucida Grande,sans-serif; }
+
+.no-js #snapshots + .copyright + div.error {
+  top: -250px;
+  /* nullifies mobile css margin-top:0; */ }
+
+.no-js #tweets + .copyright + div.error {
+  top: -450px;
+  /* nullifies mobile css margin-top:0;*/ }
+
 /* --------IE-------- */
-.ie7 #home #menu{ margin-top:11em; }
-.ie7 #home p{ width:560px;}
-.ie7 .organizer{ margin-left:14px; }
-.ie7 .organizer p{ width:400px; }
-.ie7 .copyright{ margin:10px 0;padding:0 0 1px; }
-.ie7 #message #menu,.ie7 #tweets #menu,.ie7 #snapshots #menu{ margin-left:-487px;max-width:981px;}
-.ie7 .scroll-pane{ width:510px;margin-left:-100px; }
-.ie7 .jspPane{ margin-left:-245px; }
-.ie7 #hiddenPostbox{ margin-left:-174.5px;margin-top:20px; }
-.ie7 p.remain span{ display:block;padding-bottom:20px; }
-.ie7 #cform label,.ie7 #cform input,.ie7 #cform textarea{ margin:20px 0;}
-.ie7 p.submit{ background:url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 40px 300px; }
+.ie7 #home #menu {
+  margin-top: 11em; }
+
+.ie7 #home p {
+  width: 560px; }
+
+.ie7 .organizer {
+  margin-left: 14px; }
+
+.ie7 .organizer p {
+  width: 400px; }
+
+.ie7 .copyright {
+  margin: 10px 0;
+  padding: 0 0 1px; }
+
+.ie7 #message #menu, .ie7 #tweets #menu, .ie7 #snapshots #menu {
+  margin-left: -487px;
+  max-width: 981px; }
+
+.ie7 .scroll-pane {
+  width: 510px;
+  margin-left: -100px; }
+
+.ie7 .jspPane {
+  margin-left: -245px; }
+
+.ie7 #hiddenPostbox {
+  margin-left: -174.5px;
+  margin-top: 20px; }
+
+.ie7 p.remain span {
+  display: block;
+  padding-bottom: 20px; }
+
+.ie7 #cform label, .ie7 #cform input, .ie7 #cform textarea {
+  margin: 20px 0; }
+
+.ie7 p.submit {
+  background: url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 40px 300px; }
+
 /* --------ARCHIVES-------- */
-.opera body{ height:800px; }
+.opera body {
+  height: 800px; }
+
 /* .no-js #tweets+.copyright+div.error{ top:27em;left:20em;width:380px; } */
