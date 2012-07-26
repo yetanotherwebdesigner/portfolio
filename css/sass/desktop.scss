@@ -117,9 +117,9 @@ noscript{ display:none;/* hides Clicky */ }
 .postcard{ width:570px;height:600px;margin:1.25em auto 2.5em;padding:0;background:#fff;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/yetanotherwebdesigner-stamp.png") no-repeat 95% 5%; }
 #message #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;right:58px;}
 #cform{ margin-top:60px;}
+#cform label{ font-weight:bold; }
 #cform label[for="message"]{ display:block;padding-bottom:34px; }
 #cform h1{ font-size:100%;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif; }
-#cform label{ font-weight:bold; }
 #postcard-left{ height:540px;float:left;width:360px; }
 #postcard-right{ float:left; width:210px; }
 input{ font-size:14px;font-size:1.4rem; }
@@ -132,7 +132,9 @@ p.name{ margin-top:54px; }
 #cform label[for="name"],#cform label[for="email"]{ display:block;padding:0;}
 input#name,input#email{ width:180px;max-width:180px;border-left:none;border-right:none;border-top:none;border-bottom:2px solid #4d4d4d;padding:0; }
 input[type="submit"]{ background:url("http://cdn.yetanotherwebdesigner.com/images/loading.gif") no-repeat 1em 100px;border:none;padding:1em 0;font-weight:bold;font-size:20px;font-size:2rem;font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;/* nullifies mobile css hereon */border-radius:0;color:#4d4d4d;}
-#cform label.error{ position:fixed;top:150px;color:#fff;background:#ff0000;left:40%;padding:10px;border-radius:5px;box-shadow:1px 1px 2px #333;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;letter-spacing:0px; }
+#cform .formerror span,#cform label.error{ font-weight:bold;position:fixed;top:150px;color:#fff;background:#ff0000;left:40%;padding:10px;border-radius:5px;box-shadow:1px 1px 2px #333;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;letter-spacing:0px; }
+#cform .formerror span+span{ top:180px; }
+#cform .formerror span+span+span{ top:210px; }
 div.postbox{ width:364px;height:600px;top:0;position:absolute;margin:0 0 0 310px;padding:0;background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-huge.png") no-repeat 0 0;z-index:-1;}
 .no-js p.remain{ visibility:hidden; }
 /* --------THANKYOU-------- */
@@ -164,3 +166,14 @@ h2.fourofour{ font-family:Lucida Sans Unicode,Lucida Grande,sans-serif; }
 /* --------ARCHIVES-------- */
 .opera body{ height:800px; }
 /* .no-js #tweets+.copyright+div.error{ top:27em;left:20em;width:380px; } */
+/* --------NON_SEMANTIC HELPER CLASSES-------- */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

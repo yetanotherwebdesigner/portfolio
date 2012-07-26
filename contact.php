@@ -1,3 +1,47 @@
+<?php
+   require_once("include/fgcontactform.php");
+   require_once("include/formvalidator.php");
+
+   $formproc = new FGContactForm();
+
+   $formproc->AddRecipient('anthony@yetanotherwebdesigner.com');
+$formproc->SetFormRandomKey('CnRrspl1FyEylUj');
+$validation_errors='';
+
+if(isset($_POST['submitted']))
+{// We need to validate only after the form is submitted
+
+    //Setup Server side Validations
+    //Please note that the element name is case sensitive 
+    $validator = new FormValidator();
+    $validator->addValidation("name","req","Please fill in your name.");
+    $validator->addValidation("email","email","Please enter a valid email address.");
+    $validator->addValidation("email","req","Please fill in your email address.");
+$validator->addValidation("message","req","Please say something.");
+    
+    //Then validate the form
+    if($validator->ValidateForm())
+    {
+        //If the validations succeeded, proceed with form processing
+        if($formproc->ProcessForm())
+        {
+            $formproc->RedirectToURL("thankyou.php");
+        }
+    }
+    else
+    {
+        //Validations failed. Display Errors.
+        $error_hash = $validator->GetErrors();
+        foreach($error_hash as $inpname => $inp_err)
+        {
+           $validation_errors .= "<span>$inp_err</span>";
+        }        
+    }
+}//if
+$disp_name  = isset($_POST['name'])?$_POST['name']:'';
+$disp_email = isset($_POST['email'])?$_POST['email']:'';
+$disp_message = isset($_POST['message'])?$_POST['message']:'';
+?>
 <!DOCTYPE html>
 <!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
 <!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
@@ -38,10 +82,15 @@
     <article class="content" id="message">
       <div class="postcard">
 	<div class="holder">
-	  <form id="cform" name="cform" method="post" action="sendmail.php">
+	  <form action="<?php echo $formproc->GetSelfScript(); ?>" method="post" id="cform" name="cform">
+	      <input type="hidden" name="submitted" id="submitted" value="1" />
+	      <input type="hidden" name="<?php echo $formproc->GetFormIDInputName(); ?>" value="<?php echo $formproc->GetFormIDInputValue(); ?>"/>
+  <input type="text"  class="spmhidip visuallyhidden" name="<?php echo $formproc->GetSpamTrapInputName(); ?>" />
+  <div class="formerror"><?php echo $formproc->GetErrorMessage(); ?></div>
+  <div class="formerror"><?php echo $validation_errors; ?></div>
 	    <div id="postcard-left">
 	      <h1><label for="speak">Say What You Like:</label></h1>
-	      <textarea name="message" id="speak" cols="23" rows="3" class="required" minlength="2"></textarea>
+	      <textarea name="message" id="speak" cols="23" rows="3" class="required" minlength="2"><?php echo htmlentities($disp_message) ?></textarea>
 	    </div>
 	    <div id="postcard-right">
 	      <p class="remain"><span>480</span>
@@ -49,11 +98,11 @@
 		remaining</p>
 	      <p class="name">
 		<label for="name">Your Name?</label>
-		<input name="name" type="text" id="name" size="30" class="required" minlength="2" />
+		<input name="name" type="text" id="name" size="30" class="required" value="<?php echo htmlentities($disp_name) ?>" minlength="2" />
 	      </p>
 	      <p class="email">
 		<label for="email">Your Email?</label>
-		<input name="email" type="text" id="email" size="30" class="required email" />
+		<input name="email" type="text" id="email" size="30" class="required email" value="<?php echo htmlentities($disp_email) ?>" />
 	      </p>
 	      <p class="submit">
 		<input class="submit" name="submit" type="submit" value="Send →" />

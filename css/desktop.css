@@ -546,6 +546,9 @@ noscript {
 #cform {
   margin-top: 60px; }
 
+#cform label {
+  font-weight: bold; }
+
 #cform label[for="message"] {
   display: block;
   padding-bottom: 34px; }
@@ -553,9 +556,6 @@ noscript {
 #cform h1 {
   font-size: 100%;
   font-family: 'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif; }
-
-#cform label {
-  font-weight: bold; }
 
 #postcard-left {
   height: 540px;
@@ -637,7 +637,8 @@ input[type="submit"] {
   border-radius: 0;
   color: #4d4d4d; }
 
-#cform label.error {
+#cform .formerror span, #cform label.error {
+  font-weight: bold;
   position: fixed;
   top: 150px;
   color: #fff;
@@ -648,6 +649,12 @@ input[type="submit"] {
   box-shadow: 1px 1px 2px #333;
   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
   letter-spacing: 0px; }
+
+#cform .formerror span + span {
+  top: 180px; }
+
+#cform .formerror span + span + span {
+  top: 210px; }
 
 div.postbox {
   width: 364px;
@@ -746,3 +753,13 @@ h2.fourofour {
   height: 800px; }
 
 /* .no-js #tweets+.copyright+div.error{ top:27em;left:20em;width:380px; } */
+/* --------NON_SEMANTIC HELPER CLASSES-------- */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
