@@ -5,7 +5,7 @@
    $message = $_REQUEST['message'] ;
 
    mail( $to, "YAWD Contact Form",
-   $message, "From: $email" );
+   $message, "From: $name, $email" );
    header( "Location: http://www.yetanotherwebdesigner.com/thankyou.php" );
 
    ?>
