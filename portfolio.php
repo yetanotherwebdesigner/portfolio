@@ -46,23 +46,23 @@
 	  </div>
 	</div>
 	<div class="polaroid holder"> 
-	  <img src="http://cdn.yetanotherwebdesigner.com/images/gh2-screenshot.jpg" alt="Screenshot of GH-2" title="GH-2 Home" /> 
-	  <h2><a href="http://www.gh-2.net" title="GH-2 Home">GH-2</a></h2> 
-	  <p>A product site for one of Pure Science Supplements' flagship product, GH-2. This is a makeover from the previous text-heavy, plain design to a more
-	  engaging design. Tags: HTML5, CSS3, Cufon</p> 
-	  <div class="arrows"> 
-	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
-	  </div>
-	</div>
-	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/yawd-screenshot.jpg" alt="Screenshot of Yet Another Web Designer's Homepage" title="I.e. the site you're browsing" /> 
 	  <h2><a href="/" title="I.e. the site you are browsing">Yet Another Web Designer</a></h2> 
-	  <p>A personal project that entails collecting some of my previous work,  my tweets on web design & development, as well as some experimentation. Tags: Responsive Design, Twitter API, Google Web Fonts</p> 
+	  <p>My portfolio site that entails collecting a selection of of my previous work and my tweets on web design & development. Tags: Responsive Design, Twitter API, Google Web Fonts</p> 
 	  <div class="arrows"> 
 	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
 	  </div>
 
-	</div><!-- ends .polaroid--> 
+	</div>
+	<div class="polaroid holder"> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/gh2-screenshot.jpg" alt="Screenshot of GH-2" title="GH-2 Home" /> 
+	  <h2><a href="http://www.gh-2.net" title="GH-2 Home">GH-2</a></h2> 
+	  <p>A product site for one of Pure Science Supplements' flagship product, GH-2. This is a makeover from the previous text-heavy, plain design to a more engaging design. Tags: HTML5, CSS3, Cufon</p> 
+	  <div class="arrows"> 
+	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
+	  </div>
+	</div>
+	<!-- ends .polaroid--> 
 	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/ak-screenshot.jpg" alt="Screenshot of Amber KNowles Homepage" title="Amber Knowles Home" /> 
 	  <h2><a target="blank" href="http://www.amberknowles.com" title="Visit Amber Knowles">Amber Knowles</a></h2> 
