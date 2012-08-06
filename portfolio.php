@@ -38,6 +38,14 @@
     <article class="content" id="snapshots"> 
       <div class="slideshow"> 
 	<div class="polaroid holder"> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/iir-screenshot.jpg" alt="Screenshot of If I Redesign: Google" title="IIR Google" /> 
+	  <h2><a href="http://www.yetanotherwebdesigner.com/ifiredesign/google" title="IIR Google">If I Redesign...</a></h2> 
+	  <p>A side project that started off with the question of "What if I get to redesign some of the more popular websites that I often use?" Tags: HTML5 Canvas, EaselJS, jQuery</p> 
+	  <div class="arrows"> 
+	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
+	  </div>
+	</div>
+	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/gh2-screenshot.jpg" alt="Screenshot of GH-2" title="GH-2 Home" /> 
 	  <h2><a href="http://www.gh-2.net" title="GH-2 Home">GH-2</a></h2> 
 	  <p>A product site for one of Pure Science Supplements' flagship product, GH-2. This is a makeover from the previous text-heavy, plain design to a more
