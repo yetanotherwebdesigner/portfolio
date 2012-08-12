@@ -1,3 +1,6 @@
 * Bugs
 
-** IE no-js returns plain stylesheet for now (can't read media queries)  
+** IE no-js returns plain stylesheet for now (can't read media queries)
+
+** desktop v -> postcard not centered?   
+** 'loading...' text on mobile tweets page align center + pink color
