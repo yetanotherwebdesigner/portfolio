@@ -1,0 +1,17 @@
+/* --------GLOBAL--------*/
+h1.title a {
+  text-indent: -9999px;
+  display: block;
+  width: 220px;
+  height: 80px;
+  margin: 16px auto;
+  background: url("http://cdn.yetanotherwebdesigner.com/images/mobile-h1.png") no-repeat 0 0; }
+
+/* --------HOME--------*/
+canvas {
+  display: none; }
+
+/* --------PORTFOLIO--------*/
+/* --------TWEETS--------*/
+/* --------CONTACT-------- */
+/* --------ERRORS,404--------*/

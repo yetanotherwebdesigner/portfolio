@@ -1,3 +1,13 @@
+<?php
+
+$message = "";
+$name = "";
+$email = "";
+$errors = "";
+extract($_GET);
+
+?>
+
 <!DOCTYPE html>
 <!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
 <!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
@@ -21,16 +31,16 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
     
-    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
+    <!--[if lte IE 8]><script src="../js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
-	<script src="js/libs/selectivizr-min.js"></script>
+	<script src="../js/libs/selectivizr-min.js"></script>
 	<![endif]-->
-    <script src="js/libs/modernizr.canvas.js"></script>    
+    <script src="../js/libs/modernizr.canvas.js"></script>    
     <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
   <body>
@@ -41,7 +51,16 @@
 	  <form id="cform" name="cform" method="post" action="sendmail.php">
 	    <div id="postcard-left">
 	      <h1><label for="speak">Say What You Like:</label></h1>
-	      <textarea name="message" id="speak" cols="23" rows="3" class="required" minlength="2"></textarea>
+	      <textarea name="message" id="speak" cols="23" rows="3" class="required" minlength="2"><?php echo $message; ?></textarea>
+	      <?php
+	      
+	      if(strstr($errors, 'message_empty')) {
+		  echo '<label for="speak" generated="true" class="error">Please say something.</label>';
+	      } elseif(strstr($errors, 'message_two')) {
+		  echo '<label for="speak" generated="true" class="error">Please enter at least 2 characters.</label>';
+	      }
+	      
+	      ?>
 	    </div>
 	    <div id="postcard-right">
 	      <p class="remain"><span>480</span>
@@ -49,11 +68,29 @@
 		remaining</p>
 	      <p class="name">
 		<label for="name">Your Name?</label>
-		<input name="name" type="text" id="name" size="30" class="required" minlength="2" />
+		<input name="name" type="text" id="name" size="30" class="required" minlength="2" value="<?php echo $name; ?>" />
+		<?php
+		
+		if(strstr($errors, 'name_empty')) {
+		  echo '<label for="name" generated="true" class="error" style="display: block;">Please enter your name.</label>';
+		} elseif(strstr($errors, 'name_two')) {
+		  echo '<label for="name" generated="true" class="error">Please enter at least 2 characters for your name.</label>';
+		}
+		
+		?>
 	      </p>
 	      <p class="email">
 		<label for="email">Your Email?</label>
-		<input name="email" type="text" id="email" size="30" class="required email" />
+		<input name="email" type="text" id="email" size="30" class="required email" value="<?php echo $email; ?>" />
+		<?php
+		
+		if(strstr($errors, 'email_empty')) {
+		  echo '<label for="email" generated="true" class="error" style="display: block;">Please enter your email address.</label>';
+		} elseif(strstr($errors, 'email_invalid')) {
+		  echo '<label for="email" generated="true" class="error">Please enter a valid email address.</label>';
+		}
+		
+		?>
 	      </p>
 	      <p class="submit">
 		<input class="submit" name="submit" type="submit" value="Send →" />
@@ -64,13 +101,13 @@
       </div><!-- ends .postcard -->
       <div id="hiddenPostbox" class="postbox"></div>
       <nav id="menu">
-	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
-	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
+	<a class="tooltips sans-serif" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
+	<a class="tooltips sans-serif" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
       </nav> 
     </article> 
     <div class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></div>
     <script>yepnope({
-      load:["js/jquery.min.js","http://malsup.github.com/jquery.form.js","js/jquery.validate.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+      load:["../js/jquery.min.js","http://malsup.github.com/jquery.form.js","../js/jquery.validate.min.js","../js/jquery.tools.min.js","../js/yawd.js","//static.getclicky.com/js"],
       complete:function(){
       $j(".tooltips[title]").tooltip({effect:"fade",opacity:.9,delay:5});
       $("textarea").focus();

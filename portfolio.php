@@ -21,10 +21,10 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
     
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
@@ -37,14 +37,14 @@
     <h1 class="title"><a href="/">Yet Another Web Designer</a></h1> 
     <article class="content" id="snapshots"> 
       <div class="slideshow"> 
-	<div class="polaroid holder"> 
+	<!--<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/iir-screenshot.jpg" alt="Screenshot of If I Redesign: Google" title="IIR Google" /> 
 	  <h2><a href="http://www.yetanotherwebdesigner.com/ifiredesign/google" title="IIR Google">If I Redesign...</a></h2> 
 	  <p>A side project that started off with the question of "What if I get to redesign some of the more popular websites that I often use?" Tags: HTML5 Canvas, EaselJS, jQuery</p> 
 	  <div class="arrows"> 
 	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
 	  </div>
-	</div>
+	</div>-->
 	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/yawd-screenshot.jpg" alt="Screenshot of Yet Another Web Designer's Homepage" title="I.e. the site you're browsing" /> 
 	  <h2><a href="/" title="I.e. the site you are browsing">Yet Another Web Designer</a></h2> 
@@ -89,8 +89,8 @@
 	</div><!-- ends .polaroid--> 
       </div><!-- ends .slideshow --> 
       <nav id="menu">
-	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
-	<a class="tooltips" href="contact.php" id="contact-small" title="Contact">Contact</a>
+	<a class="tooltips sans-serif" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
+	<a class="tooltips sans-serif" href="contact.php" id="contact-small" title="Contact">Contact</a>
       </nav> 
     </article> 
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
@@ -99,7 +99,9 @@
       load:["js/jquery.min.js","js/jquery.cycle.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
       complete:function(){
       $j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});
-      $(".slideshow").cycle({fx:'fade',speed:'slow',timeout:0,next:'.next',prev: '.prev'});
+      if($(window).width()>768){
+  $(".slideshow").cycle({fx:'fade',speed:'slow',timeout:0,next:'.next',prev: '.prev'});
+  }
       }
       });</script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>

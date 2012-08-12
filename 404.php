@@ -20,10 +20,10 @@
   <!-- initial-scale=1.0 prevents default zooming of pages-->
 
   <!-- For all browsers -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/compiled/style.css">
   <!-- For progressively larger displays -->
-  <link rel="stylesheet" media="only screen and (min-width: 320px)" href="/css/mobile.css">
-  <link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/desktop.css">
+  <link rel="stylesheet" media="only screen and (min-width: 320px)" href="/css/compiled/mobile.css">
+  <link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/compiled/desktop.css">
     <!--[if lte IE 8]><script src="/js/libs/respond.min.js"></script><![endif]-->     
   <!--[if (lt IE 9) & (!IEMobile)]>
       <script src="/js/libs/selectivizr-min.js"></script>
@@ -38,9 +38,9 @@
     <p>You may have clicked on a bad link, or mis-typed your URL.
       Re-orientate yourself by clicking on one of the three main sections below:</p>
     <nav id="menu"> 
-      <a class="tooltips" id="blog" href="/tweets.php" title="Tweets">Tweets</a> 
-      <a class="tooltips" id="portfolio" href="/portfolio.php" title="Portfolio">Portfolio</a> 
-      <a class="tooltips" id="contact" href="/contact.php" title="Contact">Contact</a> 
+      <a class="tooltips sans-serif" id="blog" href="/tweets.php" title="Tweets">Tweets</a> 
+      <a class="tooltips sans-serif" id="portfolio" href="/portfolio.php" title="Portfolio">Portfolio</a> 
+      <a class="tooltips sans-serif" id="contact" href="/contact.php" title="Contact">Contact</a> 
     </nav> 
   </article>
   <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>

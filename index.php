@@ -19,10 +19,10 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->   
     <!--[if (lt IE 9) & (!IEMobile)]>
     <script src="js/libs/selectivizr-min.js"></script>
@@ -37,13 +37,14 @@
 	Yet the Web is my playground, and I am no less an artist than one who paints on canvas.
 	Hire me full-time, find out more about me, or simply drop me a line.</p> 
       <nav id="menu"> 
-	<a class="tooltips" href="tweets.php" class="menu" id="blog" title="Tweets">Tweets</a>
-	<a class="tooltips" href="portfolio.php" class="menu" id="portfolio" title="Portfolio">Portfolio</a>
-	<a class="tooltips" href="contact.php" class="menu" id="contact" title="Contact">Contact</a>
+	<a class="tooltips sans-serif" href="tweets.php" class="menu" id="blog" title="Tweets">Tweets</a>
+	<a class="tooltips sans-serif" href="portfolio.php" class="menu" id="portfolio" title="Portfolio">Portfolio</a>
+	<a class="tooltips sans-serif" href="contact.php" class="menu" id="contact" title="Contact">Contact</a>
+	<a id="y-gplus" class="tooltips sans-serif" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts">Google+</a>
       </nav> 
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
-    <canvas><a class="tooltips" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"><img src="images/y-gplus.png" width="64" height="64" alt="The letter Y, with Google Plus icon on it."></a></canvas><a id="y-gplus" class="tooltips" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"></a>
+    <canvas><a class="tooltips" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"><img src="images/y-gplus.png" width="64" height="64" alt="The letter Y, with Google Plus icon on it."></a></canvas>
     <script>yepnope({
       test:Modernizr.canvas,
       yep:["js/easeljs/utils/UID.4.2.js","js/easeljs/geom/Matrix2D.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/utils/SpriteSheetUtils.4.2.js","js/easeljs/display/SpriteSheet.4.2.js","js/easeljs/display/Shadow.js","js/easeljs/display/DisplayObject.4.2.js","js/easeljs/display/Container.4.2.js","js/easeljs/display/Stage.4.2.js","js/easeljs/display/Bitmap.4.2.js","js/easeljs/display/BitmapAnimation.4.2.js","js/easeljs/utils/Ticker.js","js/easeljs/geom/Rectangle.4.2.js","js/entrance.js"],

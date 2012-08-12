@@ -21,10 +21,10 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
     
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
@@ -52,8 +52,9 @@
 	</div><!-- ends .organizer holder-->
       </div><!-- ends #organizer-wrapper-->
       <nav id="menu">
-	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>
-	<a class="tooltips" href="contact.php" id="contact-small" title="Contact">Contact</a>
+	<a class="tooltips sans-serif" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>
+	<a class="tooltips sans-serif" href="contact.php" id="contact-small" title="Contact">Contact</a>
+	<!--<a id="y-gplus" class="tooltips sans-serif" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts">Google+</a>-->
       </nav>
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
@@ -62,12 +63,14 @@
       load:["js/jquery.min.js","js/jquery.jscrollpane.min.js","js/jquery.tweet.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
       complete:function(){
       $(".tweet").tweet({username:"yetanotherwebd",count:3,refresh_interval:10,loading_text:"loading tweets..."});
-      $(".scroll-pane").bind(
+      if($(window).width()>768){
+        $(".scroll-pane").bind(
       'jsp-initialised',
       function(event, isScrollable){
       $j(".jspDrag").attr( 'title', 'Drag Me!' ).addClass("tooltips");$j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});
       });
       $(".scroll-pane").jScrollPane({verticalDragMinHeight:200});
+  }
       }
       });
     </script>

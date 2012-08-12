@@ -1,7 +1,7 @@
 /* Z-INDEXES
 .tooltip:10
 .canvas canvas 100 
-.canvas a#y-gplus 101
+a#y-gplus 101
 .no-canvas canvas 99
 #message #menu,#tweets #menu,#snapshots #menu 20
 #ribbon-top 1
@@ -19,14 +19,11 @@ $holder-width:570px;
 .wf-active .holder p{ font-weight:bold;letter-spacing:2px;}
 /* Google webfontloader ends */
 html{ background:#add8e6 url("http://cdn.yetanotherwebdesigner.com/images/bg-tile.png") repeat-x 0 0; }
-body{ height:100%;text-align:center;/* YAWD only */font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;/* nullifies mobile css */width:100%;}
+body{ /* nullifies mobile css */width:100%;}
 .content{ width:974px;margin:0 auto;color:darkslategray;}
-.copyright p{ text-align:center;font-size:10px;font-size:1rem;color:#5c5c5c;}
-h1{ font-size:49px;font-size:4.9rem;margin:.5em 0;}
-.no-js h1.title { text-indent:-9999px;
-            a{ display:block;height:59px;width:714px;margin:24px auto;background:url("http://cdn.yetanotherwebdesigner.com/images/desktop-h1.png") no-repeat 0 100%; }
+h1.title{ font-size:49px;font-size:4.9rem;margin:.5em 0;
+    a{ text-indent:-9999px;display:block;height:59px;width:714px;margin:24px auto;background:url("http://cdn.yetanotherwebdesigner.com/images/desktop-h1.png") no-repeat 0 100%; }
 }
-h1 a:link,h1 a:visited,h1 a:hover,h1 a:active{ font-family:'Orbitron',Lucida Sans Unicode, Lucida Grande, sans-serif;text-decoration:none;color:#fff;}
 h2{ font-size:20px;font-size:2rem; }
 h2 a{ font-weight:bold; }
 .holder h2+p{ font-size:18px;font-size:1.8rem; }/* intro text */
@@ -41,24 +38,29 @@ noscript{ display:none;/* hides Clicky */ }
 .holder h2{ font-family:'Dancing Script',Lucida Sans Unicode, Lucida Grande, sans-serif;text-align:center;margin:.5em;letter-spacing:1px;text-decoration:underline; }
 .holder p{ font-size:.9em;text-align:left;margin:1em;padding:0 25px 1em; }
 /* --------HOME--------*/
-.canvas canvas{ position:absolute;top:550px;left:0;z-index:100; }
-.canvas a#y-gplus{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none;margin-top:0;/* nullifies mobile.css */ }
+#home #menu a#y-gplus{ display:none;height:64px;width:64px;position:absolute;top:550px;right:72px;margin:0;background-image:none;z-index:101; }
+.canvas canvas{ display:block;position:absolute;top:550px;left:0;z-index:100; }
+/* .canvas a{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none;margin-top:0; } */
 .no-js canvas,.no-canvas canvas{ position:absolute;top:550px;right:72px;z-index:99; }
 .no-js canvas,.no-canvas canvas a,canvas img{ height:64px;width:64px;display:block;/* canvas fallback content */ }
 #home p{font-size:14px;font-size:1.4rem;text-align:center;}
 #home #menu{ background:url("http://cdn.yetanotherwebdesigner.com/images/black_arrow.png") no-repeat -999px 0;width:724px;height:230px;margin:10em auto 1.25em;/* nullifies mobile css hereon */padding:0;}
 #home #menu a { text-indent:-9999px;display:block;float:left;margin:1em 37px 1em 37px;overflow:visible; }
-#home #menu a:link,#home #menu a:visited { padding:0;border-radius:0;box-shadow:0 0 0 #000;width:167px;/* nullifies mobile css */}
-#home #menu #contact{ top:0; }
+#home #menu a:link,#home #menu a:visited { padding:0;width:167px;/* nullifies mobile css */}
+#home #menu{  
+             #contact{ top:0; }
 #blog { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer.png") no-repeat 0 0;width:167px;height:220px;left:10px;/* makes up for difference in width between postbox (127px) and the rest (167px)) */}
 #portfolio { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid.png") no-repeat 0 0px;width:167px;height:220px;left:10px;/* makes up for difference in width between postbox (127px) and the rest (167px))*/ }
 #contact { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox.png") no-repeat 0 0;width:167px;height:230px; }
+}
 /* --------PORTFOLIO--------*/
 #tweets,#snapshots,#message{ position:relative; }
 #snapshots #menu{ margin-top:0; }
 .slideshow{ width:$holder-width;height:600px;margin:1.25em 214px 2.5em 201px;padding:0;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/polaroid-bg.png") repeat 0 0;box-shadow:0 3px 1px #666;-moz-box-shadow:0 3px 3px #666;-webkit-box-shadow:0 3px 1px #666;overflow:hidden;position:relative;}
 .slideshow img { display:block;background-color:#808080;width:520px;height:347px;margin:25px;padding:0;border:2px solid #c7c7c7;/* nullifies mobile css hereon */box-shadow:0 0 0 #333;}
-.polaroid { color:#4d4d4d;overflow:hidden;height:583px;/* necc. for polaroid to define height to accomodate its content */background-image:inherit;}
+.polaroid { padding:0;border-radius:0;color:#4d4d4d;overflow:hidden;height:583px;/* necc. for polaroid to define height to accomodate its content */background-image:inherit;
+            h2 a{ color:#4d4d4d; }
+            }
 .no-js .polaroid h2,.no-js .polaroid p,.no-js .polaroid .arrows{ display:none;}
 .polaroid img[alt]{ color:#808080; }
 .js .polaroid h2{ letter-spacing:1px; }
@@ -71,11 +73,11 @@ noscript{ display:none;/* hides Clicky */ }
 #message #menu,#tweets #menu,#snapshots #menu{ position:absolute;top:22em;width:100%;z-index:20;}
 #message #menu a,#tweets #menu a,#snapshots #menu a { text-indent:-9999px;}
 #message #menu a:link,#message #menu a:visited,#tweets #menu a:link,#tweets #menu a:visited,#snapshots #menu a:link,#snapshots #menu a:visited{ position:absolute;margin:0;padding:0;border-radius:0;box-shadow:0 0 0 #000;/* nullifies mobile css */}
-#contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;right:47px;}
+#menu #contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;right:47px;}
 /* --------TWEETS--------*/
 #tweets #snapshots-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/polaroid-small.png") no-repeat 0 0;width:84px;height:110px;position:absolute;left:45px;}
 #tweets #contact-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/postbox-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;right:36px;}
-#blog-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;left:54px;}
+#menu #blog-small { background:transparent url("http://cdn.yetanotherwebdesigner.com/images/organizer-small.png") no-repeat 50% 0;width:84px;height:115px;position:absolute;left:54px;}
 #organizer-wrapper{ display:block;width:618px;height:642px;margin:1.25em auto 2.5em auto;padding:0;background:saddlebrown;border-top-left-radius:none;border-bottom-left-radius:none;border-bottom-right-radius:10px;border-top-right-radius:10px;border-left:2px solid #5e2f0d;box-shadow:0 2px 1px #000; }
 .organizer{ width:$holder-width;height:600px;margin:0 0 0 29px;padding:0;background:#fff url("http://cdn.yetanotherwebdesigner.com/images/organizer-ring.png") repeat-y -27px 0;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow:0 3px 1px #333;-moz-box-shadow:0 3px 1px #333;-webkit-box-shadow:0 3px 1px #333x;position:relative;top:25px;}
 .organizer h2{ padding-top:1em;}
