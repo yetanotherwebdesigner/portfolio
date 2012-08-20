@@ -4,3 +4,10 @@
 
 ** desktop v -> postcard not centered?   
 ** 'loading...' text on mobile tweets page align center + pink color
+** mobile - loads too slowly - remove easeljs loading is poss.
+** google webfont takes too damn long on tablets/mobile
+** desktop layout on tablets
+
+   portfolio page: if i redesign,ak,es,ezy images don't load on full
+   contact page: name/email field positioning screwed up
+   tweet.php: twitter logo not showing
