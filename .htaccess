@@ -1,5 +1,5 @@
 # Explicitly setting the charset to be utf-8
-AddType 'text/html; charset=UTF-8' php
+#AddType 'text/html; charset=UTF-8' php
 # compress the files:
 AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
 # By removing the ETag header, you disable caches and browsers from being able to validate files, so they are forced to rely on your Cache-Control and Expires header.

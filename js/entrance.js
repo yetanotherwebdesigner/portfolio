@@ -97,7 +97,7 @@ function tick(){
 	bmpAnimation.gotoAndStop("walk");
 	stage.removeChild(bmpAnimation);
 	bmpAnimationIdle.gotoAndPlay("idle");
-	$("#y-gplus").css({display:"block"});
+	$("#y-gplus").css({display:"inline-block"});
 	stage.addChild(bmpAnimationIdle);
     }
     //moving sprite based on direction & speed

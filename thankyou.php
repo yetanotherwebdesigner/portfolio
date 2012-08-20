@@ -21,10 +21,10 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
     
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
@@ -39,8 +39,8 @@
       <p>Thank you for your message. I will get back to you soon.</p>
       <div class="postbox"></div>
       <nav id="menu">
-	<a class="tooltips" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
-	<a class="tooltips" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
+	<a class="tooltips sans-serif" href="tweets.php" id="blog-small" title="Tweets">Tweets</a>
+	<a class="tooltips sans-serif" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
       </nav> 
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>

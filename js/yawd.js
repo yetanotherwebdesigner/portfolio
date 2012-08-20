@@ -1,6 +1,6 @@
 <!-- Google Web font Loader -->
       WebFontConfig = {
-      google: { families: [ 'Orbitron', 'Dancing Script' ] }
+      google: { families: [ 'Dancing Script' ] }
       };
       (function() {
       var wf = document.createElement('script');

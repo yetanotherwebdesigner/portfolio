@@ -15,16 +15,18 @@
 
 ** IE7 > postcards vanished to wrong side
 ** Chrome, Safari, Opera check   
+** TODO desktop - Blink from black to white for portfolio holder
+** TODO desktop - postcard not centered?
+** TODO mobile - 'loading...' on tweets.php shd be pink and smaller font
+
+
 * GOOD TO HAVE
 
-** Portfolio > inner tooltip for arrows
 ** DONE load tooltip images 1st with other bg image for faster load time
    CLOSED: [2012-07-17 Tue 13:04]
 
    used background-image css instead to preload images
    
-** Tweets > load more images as click on twitter logo
-
 ** 'chuck' sound on postcard sent
 
 ** DONE IE8 black border around tooltip
@@ -37,4 +39,9 @@
 
    Used amazon cloudfront + yepnope to improve speed
 
-** TODO IE simple tooltip 2 black dots ugly   
+** DONE IE simple tooltip 2 black dots ugly   
+   CLOSED: [2012-08-13 Mon 13:03]
+
+   removed the shit coz' it's imposs to clean the png file up completely so
+   that IE renders it w/o black dots. Using one single tooltip for
+   simplicity & clarity.
