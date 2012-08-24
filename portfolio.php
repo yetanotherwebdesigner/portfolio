@@ -21,10 +21,10 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/minified/style.css">
+    <link rel="stylesheet" href="http://cdn.yetanotherwebdesigner.com/css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
     
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
@@ -37,18 +37,18 @@
     <h1 class="title"><a href="/">Yet Another Web Designer</a></h1> 
     <article class="content" id="snapshots"> 
       <div class="slideshow"> 
-	<!--<div class="polaroid holder"> 
+	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/iir-screenshot.jpg" alt="Screenshot of If I Redesign: Google" title="IIR Google" /> 
 	  <h2><a href="http://www.yetanotherwebdesigner.com/ifiredesign/google" title="IIR Google">If I Redesign...</a></h2> 
-	  <p>A side project that started off with the question of "What if I get to redesign some of the more popular websites that I often use?" Tags: HTML5 Canvas, EaselJS, jQuery</p> 
+	  <p>A personal experiment that started off with the question of "What if I get to redesign some of the websites that I often use?" First attempt: Google.com. Tags: HTML5 Canvas, EaselJS, jQuery</p> 
 	  <div class="arrows"> 
 	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
 	  </div>
-	</div>-->
+	</div>
 	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/yawd-screenshot.jpg" alt="Screenshot of Yet Another Web Designer's Homepage" title="I.e. the site you're browsing" /> 
 	  <h2><a href="/" title="I.e. the site you are browsing">Yet Another Web Designer</a></h2> 
-	  <p>My portfolio site that entails collecting a selection of of my previous work and my tweets on web design & development. Tags: Responsive Design, Twitter API, Google Web Fonts</p> 
+	  <p>My portfolio site that entails collecting a selection of my previous work and my tweets on web design & development. Tags: Responsive Design, Twitter API, Google Web Fonts</p> 
 	  <div class="arrows"> 
 	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
 	  </div>
