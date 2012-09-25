@@ -21,10 +21,10 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/minified/style.css">
+    <link rel="stylesheet" href="http://cdn.yetanotherwebdesigner.com/css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
     
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
@@ -50,6 +50,17 @@
       $j(".tooltips[title]").tooltip({effect:"fade",opacity:.9,delay:5});
       }
       });</script>
+    <script>
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(66561433);
+  (function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+</script>
     <script>try{ clicky.init(66561433); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
   </body>

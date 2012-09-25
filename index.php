@@ -19,14 +19,14 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/minified/style.css">
+    <link rel="stylesheet" href="http://cdn.yetanotherwebdesigner.com/css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->   
     <!--[if (lt IE 9) & (!IEMobile)]>
-    <script src="js/libs/selectivizr-min.js"></script>
-    <![endif]-->
+	<script src="js/libs/selectivizr-min.js"></script>
+	<![endif]-->
     <script src="js/libs/modernizr.canvas.js"></script>    
     <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
@@ -48,10 +48,20 @@
     <script>yepnope({
       test:Modernizr.canvas,
       yep:["js/easeljs/utils/UID.4.2.js","js/easeljs/geom/Matrix2D.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/utils/SpriteSheetUtils.4.2.js","js/easeljs/display/SpriteSheet.4.2.js","js/easeljs/display/Shadow.js","js/easeljs/display/DisplayObject.4.2.js","js/easeljs/display/Container.4.2.js","js/easeljs/display/Stage.4.2.js","js/easeljs/display/Bitmap.4.2.js","js/easeljs/display/BitmapAnimation.4.2.js","js/easeljs/utils/Ticker.js","js/easeljs/geom/Rectangle.4.2.js","js/entrance.js"],
-      both:["js/jquery.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+      both:["js/jquery.min.js","js/jquery.tools.min.js","js/yawd.js"],
       complete:function(){if(Modernizr.canvas&&screen.width>768) init();$j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});}
-      });</script>
-    <script>try{ clicky.init(66561433); }catch(e){}</script>
-    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
-  </body>
-  </html>
+  });</script>
+<script>
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(66561433);
+  (function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
+</body>
+</html>

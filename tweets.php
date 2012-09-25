@@ -21,11 +21,10 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="css/minified/style.css">
+    <link rel="stylesheet" href="http://cdn.yetanotherwebdesigner.com/css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
-    
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
@@ -60,7 +59,7 @@
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
     <div class="error"><p>Javascript has to be enabled for the tweets to be loaded. Please enable Javascript on your browser and try again. Alternatively, you may visit my Twitter page by clicking on the Twitter logo below.</p></div>
     <script>yepnope({
-      load:["js/jquery.min.js","js/jquery.jscrollpane.min.js","js/jquery.tweet.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+      load:["js/jquery.min.js","js/jquery.jscrollpane.min.js","js/jquery.tweet.js","js/jquery.tools.min.js","js/yawd.js"],
       complete:function(){
       $(".tweet").tweet({username:"yetanotherwebd",count:3,refresh_interval:10,loading_text:"loading tweets..."});
       if($(window).width()>768){
@@ -74,7 +73,17 @@
       }
       });
     </script>
-    <script>try{ clicky.init(66561433); }catch(e){}</script>
-    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
+<script>
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(66561433);
+  (function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66561433ns.gif" /></p></noscript>
   </body>
   </html>
