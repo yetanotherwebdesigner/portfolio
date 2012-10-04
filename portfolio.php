@@ -38,6 +38,14 @@
     <article class="content" id="snapshots"> 
       <div class="slideshow"> 
 	<div class="polaroid holder"> 
+	  <img src="http://cdn.yetanotherwebdesigner.com/images/knowthyman-screenshot.png" alt="Screenshot of Know Thy Man" title="Know Thy Man Splashpage" /> 
+	  <h2><a href="http://www.knowthyman.com" title="Know Thy Man Splashpage">Know Thy Man</a></h2> 
+	  <p>A full-blown splashpage designed for Know Thy Man, a free newsletter service powered by Mailchimp. Tags: Splashpage, Full page background, Mailchimp</p> 
+	  <div class="arrows"> 
+	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
+	  </div>
+	</div>
+	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/iir-screenshot.jpg" alt="Screenshot of If I Redesign: Google" title="IIR Google" /> 
 	  <h2><a href="http://www.yetanotherwebdesigner.com/ifiredesign/google" title="IIR Google">If I Redesign...</a></h2> 
 	  <p>A personal experiment that started off with the question of "What if I get to redesign some of the websites that I often use?" First attempt: Google.com. Tags: HTML5 Canvas, EaselJS, jQuery</p> 
