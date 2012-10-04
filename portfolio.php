@@ -40,7 +40,7 @@
 	<div class="polaroid holder"> 
 	  <img src="http://cdn.yetanotherwebdesigner.com/images/knowthyman-screenshot.png" alt="Screenshot of Know Thy Man" title="Know Thy Man Splashpage" /> 
 	  <h2><a href="http://www.knowthyman.com" title="Know Thy Man Splashpage">Know Thy Man</a></h2> 
-	  <p>A full-blown splashpage designed for Know Thy Man, a free newsletter service powered by Mailchimp. Tags: Splashpage, Full page background, Mailchimp</p> 
+	  <p>A full-blown splashpage designed for Know Thy Man, a free newsletter service powered by Mailchimp. Tags: Splashpage, Full Page Background, Responsive Design</p> 
 	  <div class="arrows"> 
 	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
 	  </div>
@@ -86,14 +86,6 @@
 	  <div class="arrows"> 
 	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
 	  </div>
-	</div><!-- ends .polaroid--> 
-	<div class="polaroid holder"> 
-	  <img src="http://cdn.yetanotherwebdesigner.com/images/ezy-screenshot.jpg" alt="Screenshot of EZY English" title="EZY English Home" /> 
-	  <h2>EZY English</h2> 
-	  <p>A squeezpage that worked hand in hand with a Google Adwords campaign to sell subscription to an educational e-magazine to English learners in Japan. Tags: Wordpress, YUI, EDM, Adwords</p> 
-	  <div class="arrows"> 
-	    <a title="Previous" class="prev" href="#">&lt;</a><a title="Next" class="next" href="#">&gt;</a> 
-	  </div> 
 	</div><!-- ends .polaroid--> 
       </div><!-- ends .slideshow --> 
       <nav id="menu">
