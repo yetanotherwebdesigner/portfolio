@@ -9,7 +9,6 @@ yDestination=0,
 imgYRun=new Image(),imgYIdle=new Image();
 function init(){
     canvas=document.getElementsByTagName("canvas")[0];
-    console.log(window.innerWidth);
     canvas.width=window.innerWidth-17;
     canvas.height=64;
     imgYRun.onload=handleImageLoad;
@@ -33,13 +32,13 @@ function handleImageLoad(e){
 }
 function startGame(){
     //create new stage, pointing it to canvas
-    stage=new createjs.Stage(canvas);
+    stage=new Stage(canvas);
     //grab canvas height & width for later calculations
     screen_width=canvas.width;
     screen_height=canvas.height;
-    yDestination=(screen_width-974)/2+974;
+    yDestination=(screen_width-974)/2+974-64;
     //create spritesheet & assign associated data
-    var spritesheet=new createjs.SpriteSheet({
+    var spritesheet=new SpriteSheet({
 					//image to use
 					images:[imgYRun],
 					//width,height,registration point of each sprite
@@ -51,7 +50,7 @@ function startGame(){
 //    createjs.SpriteSheetUtils.addFlippedFrames(spritesheet,true,false,false);
     
     //create a BitMapAnimation instance to display and play back sprite sheet
-    bmpAnimation=new createjs.BitmapAnimation(spritesheet);
+    bmpAnimation=new BitmapAnimation(spritesheet);
     //set registration point (point it'll be positioned & _rotated_ around) to center of frame dimenstions
     bmpAnimation.regX=bmpAnimation.spriteSheet.frameWidth/2|0;//"|0" is shortcut Math.floor
     bmpAnimation.regY=bmpAnimation.spriteSheet.frameHeight/2|0;
@@ -74,12 +73,12 @@ function startGame(){
     Ticker.useRAF=true;
     Ticker.setFPS(60);
 
-    var spriteSheetIdle=new createjs.SpriteSheet({
+    var spriteSheetIdle=new SpriteSheet({
 					    images:[imgYIdle],
 					    frames:{width:64,height:64,regX:32,regY:32},
 					    animations:{idle:[0,0,"idle"]}
 					});
-    bmpAnimationIdle=new createjs.BitmapAnimation(spriteSheetIdle);
+    bmpAnimationIdle=new BitmapAnimation(spriteSheetIdle);
     bmpAnimationIdle.name="y-idle";
     bmpAnimationIdle.x=yDestination;// -104;
     bmpAnimationIdle.y=32;
