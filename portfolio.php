@@ -25,12 +25,11 @@
     <!-- For progressively larger displays -->
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
-    
-    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     
+    <!--[if lte IE 8]><script src="http://cdn.yetanotherwebdesigner.com/js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
-	<script src="js/libs/selectivizr-min.js"></script>
+	<script src="http://cdn.yetanotherwebdesigner.com/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
-    <script src="js/libs/modernizr.canvas.js"></script>        
+    <script src="http://cdn.yetanotherwebdesigner.com/js/libs/modernizr.canvas.js"></script>        
     <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
   <body>
@@ -96,7 +95,7 @@
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
     <div class="error"><p>Javascript has to be enabled for the portfolio to be loaded. Please enable Javascript on your browser and try again.</p></div>
     <script>yepnope({
-      load:["js/jquery.min.js","js/jquery.cycle.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],
+      load:["http://cdn.yetanotherwebdesigner.com/js/jquery.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.cycle.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.tools.min.js","http://cdn.yetanotherwebdesigner.com/js/yawd.js","//static.getclicky.com/js"],
       complete:function(){
       $j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});
       if($(window).width()>768){

@@ -23,11 +23,11 @@
     <!-- For progressively larger displays -->
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
-    <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->   
+    <!--[if lte IE 8]><script src="http://cdn.yetanotherwebdesigner.com/js/libs/respond.min.js"></script><![endif]-->   
     <!--[if (lt IE 9) & (!IEMobile)]>
-	<script src="js/libs/selectivizr-min.js"></script>
+	<script src="http://cdn.yetanotherwebdesigner.com/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
-    <script src="js/libs/modernizr.canvas.js"></script>    
+    <script src="http://cdn.yetanotherwebdesigner.com/js/libs/modernizr.canvas.js"></script>    
     <link rel="shortcut icon" type="image/x-icon" href="http://cdn.yetanotherwebdesigner.com/images/favicon.ico" /> 
   </head>
   <body>
@@ -47,8 +47,8 @@
     <canvas><a class="tooltips" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"><img src="images/y-gplus.png" width="64" height="64" alt="The letter Y, with Google Plus icon on it."></a></canvas>
     <script>yepnope({
       test:Modernizr.canvas,
-      yep:["js/easeljs/utils/UID.4.2.js","js/easeljs/geom/Matrix2D.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/events/MouseEvent.4.2.js","js/easeljs/utils/SpriteSheetUtils.4.2.js","js/easeljs/display/SpriteSheet.4.2.js","js/easeljs/display/Shadow.js","js/easeljs/display/DisplayObject.4.2.js","js/easeljs/display/Container.4.2.js","js/easeljs/display/Stage.4.2.js","js/easeljs/display/Bitmap.4.2.js","js/easeljs/display/BitmapAnimation.4.2.js","js/easeljs/utils/Ticker.js","js/easeljs/geom/Rectangle.4.2.js","js/entrance.js"],
-      both:["js/jquery.min.js","js/jquery.tools.min.js","js/yawd.js"],
+      yep:["http://cdn.yetanotherwebdesigner.com/js/easeljs/utils/UID.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/geom/Matrix2D.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/events/MouseEvent.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/events/MouseEvent.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/utils/SpriteSheetUtils.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/display/SpriteSheet.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/display/Shadow.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/display/DisplayObject.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/display/Container.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/display/Stage.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/display/Bitmap.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/display/BitmapAnimation.4.2.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/utils/Ticker.js","http://cdn.yetanotherwebdesigner.com/js/easeljs/geom/Rectangle.4.2.js","http://cdn.yetanotherwebdesigner.com/js/entrance.js"],
+      both:["http://cdn.yetanotherwebdesigner.com/js/jquery.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.tools.min.js","http://cdn.yetanotherwebdesigner.com/js/yawd.js"],
       complete:function(){if(Modernizr.canvas&&screen.width>768) init();$j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});}
   });</script>
 <script>
