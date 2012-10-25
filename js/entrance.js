@@ -5,15 +5,16 @@ screen_height,
 bmpAnimation,
 bmpAnimationIdle,
 numImagesLoaded=0,
+yDestination=0,
 imgYRun=new Image(),imgYIdle=new Image();
 function init(){
     canvas=document.getElementsByTagName("canvas")[0];
-    canvas.width=screen.width-17;
+    console.log(window.innerWidth);
+    canvas.width=window.innerWidth-17;
     canvas.height=64;
     imgYRun.onload=handleImageLoad;
     imgYRun.onerror=handleImageError;
     imgYRun.src="http://cdn.yetanotherwebdesigner.com/images/y-run.png";
-
     imgYIdle.onload=handleImageLoad;
     imgYIdle.onerror=handleImageError;
     imgYIdle.src="http://cdn.yetanotherwebdesigner.com/images/y-idle.png";
@@ -36,6 +37,7 @@ function startGame(){
     //grab canvas height & width for later calculations
     screen_width=canvas.width;
     screen_height=canvas.height;
+    yDestination=(screen_width-974)/2+974;
     //create spritesheet & assign associated data
     var spritesheet=new createjs.SpriteSheet({
 					//image to use
@@ -75,11 +77,11 @@ function startGame(){
     var spriteSheetIdle=new createjs.SpriteSheet({
 					    images:[imgYIdle],
 					    frames:{width:64,height:64,regX:32,regY:32},
-					    animations:{idle:[1,1,"idle"]}
+					    animations:{idle:[0,0,"idle"]}
 					});
     bmpAnimationIdle=new createjs.BitmapAnimation(spriteSheetIdle);
     bmpAnimationIdle.name="y-idle";
-    bmpAnimationIdle.x=screen_width-104;
+    bmpAnimationIdle.x=yDestination;// -104;
     bmpAnimationIdle.y=32;
     bmpAnimationIdle.shadow=new Shadow("#72A4AD",0,3,1);
     bmpAnimationIdle.onClick=function(evt){window.location="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts";};
@@ -90,14 +92,14 @@ function handleImageError(e){
 }
 function tick(){
     //hit testing the screen width, else our sprite will disappear
-    if(bmpAnimation.x>=screen_width-104){
+    if(bmpAnimation.x>=yDestination){
 	//we've reached the right side of the screen
 	//We need to walk left now to go back to our initial position
 	bmpAnimation.direction="ltr";
 	bmpAnimation.gotoAndStop("walk");
 	stage.removeChild(bmpAnimation);
 	bmpAnimationIdle.gotoAndPlay("idle");
-	$("#y-gplus").css({display:"inline-block"});
+	$("#y-gplus").css({display:"inline-block",left:yDestination-32});
 	stage.addChild(bmpAnimationIdle);
     }
     //moving sprite based on direction & speed
