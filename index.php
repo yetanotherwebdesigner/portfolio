@@ -40,16 +40,13 @@
 	<a class="tooltips sans-serif" href="tweets.php" class="menu" id="blog" title="Tweets">Tweets</a>
 	<a class="tooltips sans-serif" href="portfolio.php" class="menu" id="portfolio" title="Portfolio">Portfolio</a>
 	<a class="tooltips sans-serif" href="contact.php" class="menu" id="contact" title="Contact">Contact</a>
-	<a id="y-gplus" class="tooltips sans-serif" title="Blog" href="http://www.yetanotherwebdesigner.com/blog/">Blog</a>
       </nav> 
     </article>
     <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
-    <canvas><a class="tooltips" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts"><img src="images/y-gplus.png" width="64" height="64" alt="The letter Y, with Google Plus icon on it."></a></canvas>
     <script>yepnope({
       test:Modernizr.canvas,
-      yep:["http://code.createjs.com/easeljs-0.4.2.min.js","http://cdn.yetanotherwebdesigner.com/js/entrance.js"],
       both:["http://cdn.yetanotherwebdesigner.com/js/jquery.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.tools.min.js","http://cdn.yetanotherwebdesigner.com/js/yawd.js"],
-      complete:function(){$j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});if(Modernizr.canvas&&screen.width>768) init();}
+      complete:function(){$j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});}
   });</script>
 <script>
   var clicky_site_ids = clicky_site_ids || [];
