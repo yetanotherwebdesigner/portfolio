@@ -21,9 +21,9 @@
     <!-- initial-scale=1.0 prevents default zooming of pages-->
 
     <!-- For all browsers -->
-    <link rel="stylesheet" href="http://cdn.yetanotherwebdesigner.com/css/minified/style.css">
+    <link rel="stylesheet" href="css/minified/style.css">
     <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
     
     <!--[if lte IE 8]><script src="js/libs/respond.min.js"></script><![endif]-->     

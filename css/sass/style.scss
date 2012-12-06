@@ -543,28 +543,32 @@ noscript{ display:none;/* hides Clicky */ }
         p{font-size:14px;font-size:1.4rem;text-align:center;}
 }
 #home #menu{ width:100%;left:0;padding:2em 0;}
-#menu a:link,#menu a:visited{ position:relative;text-decoration:none;width:100px;padding:40px 0 0;margin:3px;display:inline-block;height:61px;color:#fff;font-weight:bold;background-repeat:no-repeat;background-image:url("http://cdn.yetanotherwebdesigner.com/images/m-nav-bg.png");text-align:center;}
+#menu a:link,#menu a:visited{ position:relative;text-decoration:none;width:100px;padding:40px 0 0;margin:3px;display:inline-block;height:61px;color:#fff;font-weight:bold;background-repeat:no-repeat;background-image:url("http://cdn.yetanotherwebdesigner.com/images/m-nav-bg.png");text-align:center;text-shadow:0 -1px 0 rgba(0,0,0,.3);}
 #blog,#blog-small { background-position:0 0;}
 #portfolio,#snapshots-small{ background-position:-200px 0;}
-#contact,#contact-small{ background-position:-100px 0;}
+#contact,#contact-small{ background-position:-300px 0;}
 #y-gplus{ background-position:-300px 0; }
 .tooltip{text-indent:-9999px;background:transparent;}/* no tooltip for basic styling */
 /* TWEETS */
 #tweets,#snapshots,#message{ position:relative; }
 .slideshow{ width:100%;margin:0;padding:0;position:relative;
-            img { display:block;width:95%;margin:25px auto;padding:0;}
+            img { display:block;width:95%;margin:25px auto;padding:0;border-width:1px;border-style:solid;border-color:rgba(194, 194, 194, .5) rgba(199, 199, 199, .5) #e6e6e6;}
 }
-.polaroid { background:#fff;padding:20px;margin:10px 0;border-radius:50px;
+.polaroid { background:#fff;padding:20px;margin:10px 0;border-radius:10px;
 &:last-child{ margin-bottom:20px; }
             }
 .no-js .polaroid h2,.no-js .polaroid p,.no-js .polaroid .arrows{ display:none;}
 .js .arrows{ display:none; }
-.js .polaroid h2, .js .polaroid p{ display:block; }
+.js .polaroid h2, .js .polaroid p{ display:block;text-align:left; }
+.js .polaroid h2{ text-align:center;
+                  a:link,a:visited{ text-decoration:none; }
+a:hover,a:active{ text-decoration:underline; }
+                  }
 .arrows .prev, .arrows .next{ font-size:1.25em;text-decoration:none;margin:0 20px;background:#4d4d4d;color:#fff;border-radius:10px;padding:5px; }
 /* TWEETS */
 .tweet .tweet_list{ margin:0;padding:0;list-style-type:none; }
-.tweet .tweet_list li, .query .tweet_list li {margin:0 0 20px;padding:40px;background:#ff0066;color:#fff;line-height:200%;@include shadow;border-radius:50px; }
-.tweet .tweet_list li a, .query .tweet_list li a{color:#fff;background:#550022;border-radius:50px;text-decoration:none;padding:5px;}
+.tweet .tweet_list li, .query .tweet_list li {margin:0 0 20px;padding:40px;background:#ff0066;color:#fff;line-height:200%;@include shadow;border-radius:10px; }
+.tweet .tweet_list li a, .query .tweet_list li a{color:#fff;background:#550022;border-radius:50px;text-decoration:none;padding:5px;display:inline-block;}
 .scroll-pane{position:relative;height:auto;}
 .no-js .scroll-pane{ min-height:150px; }
 #twitter-home{ display:inline-block;margin-bottom:50px; }
@@ -573,10 +577,10 @@ h1 label{ font-size:1.8rem;font-size:18px; }
 .postcard p{ text-align:center; }
 p.remain{ display:none; }
 input,textarea{ width:100%;background:transparent;border:1px solid #4d4d4d;margin:20px 0 0;border-radius:5px;
-                &:focus{ border:1px solid #ccff00; }
+                &:focus{ border:1px solid #f60; }
                 }
 textarea{ min-height:200px; }
-input[type="submit"]{ background:#ccff00 url("http://cdn.yetanotherwebdesigner.com/images/loading-mobile.gif") no-repeat 1em 100px;border:none;color:#fff;padding:10px;border-radius:5px;font-weight:bold;@include shadow(); }
+input[type="submit"]{ background:#f60 url("http://cdn.yetanotherwebdesigner.com/images/loading-mobile.gif") no-repeat 1em 100px;border:none;color:#fff;padding:10px;border-radius:5px;font-weight:bold;@include shadow(); }
 #cform .formerror span,#cform label.error{ background:#ff0000;color:#fff;font-size:12px;font-size:1.2rem;padding:5px;border-radius:5px; }
 .thankyou p{ text-align:center; }
 /* ERRORS,404 */
