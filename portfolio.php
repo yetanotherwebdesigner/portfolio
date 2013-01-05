@@ -93,7 +93,7 @@
 	<a class="tooltips sans-serif" href="contact.php" id="contact-small" title="Contact">Contact</a>
       </nav> 
     </article> 
-    <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
+    <footer itemscope itemtype="http://schema.org/Person" class="copyright"><p>Copyright <time>2013</time> &copy; <span itemprop="name">Teo Wei Pin (a.k.a Anthony)</span></p></footer>
     <div class="error"><p>Javascript has to be enabled for the portfolio to be loaded. Please enable Javascript on your browser and try again.</p></div>
     <script>yepnope({
       load:["js/jquery.min.js","js/jquery.cycle.min.js","js/jquery.tools.min.js","js/yawd.js","//static.getclicky.com/js"],

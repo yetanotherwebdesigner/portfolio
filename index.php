@@ -43,7 +43,7 @@
 	<a id="y-gplus" class="tooltips sans-serif" title="Blog" href="/blog">Blog</a>
       </nav> 
     </article>
-    <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
+    <footer itemscope itemtype="http://schema.org/Person" class="copyright"><p>Copyright <time>2013</time> &copy; <span itemprop="name">Teo Wei Pin (a.k.a Anthony)</span></p></footer>
     <canvas><a class="tooltips" title="Blog" href="/blog"><img src="images/y-idle.png" width="64" height="64" alt="The letter Y, with the Wordpress logo on it."></a></canvas>
     <script>yepnope({
       test:Modernizr.canvas,

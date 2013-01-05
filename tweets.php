@@ -56,7 +56,7 @@
 	<!--<a id="y-gplus" class="tooltips sans-serif" title="Google+" href="https://plus.google.com/b/101251082499312129098/101251082499312129098/posts">Google+</a>-->
       </nav>
     </article>
-    <footer class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></footer>
+    <footer itemscope itemtype="http://schema.org/Person" class="copyright"><p>Copyright <time>2013</time> &copy; <span itemprop="name">Teo Wei Pin (a.k.a Anthony)</span></p></footer>
     <div class="error"><p>Javascript has to be enabled for the tweets to be loaded. Please enable Javascript on your browser and try again. Alternatively, you may visit my Twitter page by clicking on the Twitter logo below.</p></div>
     <script>yepnope({
       load:["http://cdn.yetanotherwebdesigner.com/js/jquery.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.jscrollpane.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.tweet.js","http://cdn.yetanotherwebdesigner.com/js/jquery.tools.min.js","js/yawd.js"],

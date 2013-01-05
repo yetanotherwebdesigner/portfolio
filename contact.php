@@ -104,7 +104,7 @@ extract($_GET);
 	<a class="tooltips sans-serif" href="portfolio.php" id="snapshots-small" title="Portfolio">Portfolio</a>    
       </nav> 
     </article> 
-    <div class="copyright"><p>Copyright 2012 &copy; Anthony Teo</p></div>
+    <footer itemscope itemtype="http://schema.org/Person" class="copyright"><p>Copyright <time>2013</time> &copy; <span itemprop="name">Teo Wei Pin (a.k.a Anthony)</span></p></footer>
     <script>yepnope({
       load:["../js/jquery.min.js","http://malsup.github.com/jquery.form.js","../js/jquery.validate.min.js","../js/jquery.tools.min.js","../js/yawd.js"],
       complete:function(){
