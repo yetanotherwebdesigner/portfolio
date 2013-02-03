@@ -24,7 +24,7 @@
     <!-- For progressively larger displays -->
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="/css/minified/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px)" href="/css/minified/desktop.css">
-    <!--[if lte IE 8]><script src="http://cdn.yetanotherwebdesigner.com/js/libs/respond.min.js"></script><![endif]-->     
+    <!--[if lte IE 8]><script src="/js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="http://cdn.yetanotherwebdesigner.com/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
