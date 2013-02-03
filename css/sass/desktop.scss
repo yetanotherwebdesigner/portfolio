@@ -39,7 +39,7 @@ noscript{ display:none;/* hides Clicky */ }
 .holder p{ font-size:.9em;text-align:left;margin:1em;padding:0 25px 1em; }
 /* --------HOME--------*/
 #home #menu a#y-gplus{ display:none;height:64px;width:64px;position:absolute;top:550px;right:72px;margin:0;background-image:none;z-index:101; }
-.canvas canvas{ display:block;position:absolute;top:550px;left:0;z-index:100; }
+.canvas canvas{ display:block;position:absolute;top:550px;left:-64px;z-index:100; }
 /* .canvas a{ display:none;position:absolute;top:550px;right:72px;z-index:101;background-image:none;margin-top:0; } */
 .no-js canvas,.no-canvas canvas{ position:absolute;top:550px;right:72px;z-index:99; }
 .no-js canvas,.no-canvas canvas a,canvas img{ height:64px;width:64px;display:block;/* canvas fallback content */ }
