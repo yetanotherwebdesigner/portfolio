@@ -47,8 +47,8 @@
     <canvas><a class="tooltips" title="Blog" href="/blog"><img src="images/y-idle.png" width="64" height="64" alt="The letter Y, with the Wordpress logo on it."></a></canvas>
     <script>yepnope({
       test:Modernizr.canvas,
-      yep:["http://code.createjs.com/easeljs-0.4.2.min.js","http://cdn.yetanotherwebdesigner.com/js/entrance.js"],
-      both:["http://cdn.yetanotherwebdesigner.com/js/jquery.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.tools.min.js","/js/yawd.js"],
+      yep:["http://code.createjs.com/easeljs-0.4.2.min.js","js/entrance.js"],
+      both:["http://cdn.yetanotherwebdesigner.com/js/jquery.min.js","http://cdn.yetanotherwebdesigner.com/js/jquery.tools.min.js","js/yawd.js"],
       complete:function(){$j(".tooltips[title]").tooltip({effect:"fade",opacity:.9, delay:5});if(Modernizr.canvas&&screen.width>768)init();}
   });</script>
 <script>

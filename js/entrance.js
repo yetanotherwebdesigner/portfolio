@@ -9,7 +9,7 @@ yDestination=0,
 imgYRun=new Image(),imgYIdle=new Image();
 function init(){
     canvas=document.getElementsByTagName("canvas")[0];
-    canvas.width=window.innerWidth-17;
+    canvas.width=window.innerWidth-17+64;//taking into account <canvas> is left positioned -64 at the start
     canvas.height=64;
     imgYRun.onload=handleImageLoad;
     imgYRun.onerror=handleImageError;
@@ -36,7 +36,7 @@ function startGame(){
     //grab canvas height & width for later calculations
     screen_width=canvas.width;
     screen_height=canvas.height;
-    yDestination=(screen_width-974)/2+974-64;
+    yDestination=(screen_width-974)/2+974;
     //create spritesheet & assign associated data
     var spritesheet=new SpriteSheet({
 					//image to use
@@ -98,7 +98,7 @@ function tick(){
 	bmpAnimation.gotoAndStop("walk");
 	stage.removeChild(bmpAnimation);
 	bmpAnimationIdle.gotoAndPlay("idle");
-	$("#y-gplus").css({display:"inline-block",left:yDestination-32});
+	$("#y-gplus").css({display:"inline-block",left:yDestination-96});
 	stage.addChild(bmpAnimationIdle);
     }
     //moving sprite based on direction & speed
