@@ -24,8 +24,7 @@
     <link rel="stylesheet" href="css/minified/style.css">
     <!-- For progressively larger displays -->
     <link rel="stylesheet" media="only screen and (min-width: 320px)" href="css/minified/mobile.css">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="http://cdn.yetanotherwebdesigner.com/css/minified/desktop.css">
-    
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/minified/desktop.css">
     <!--[if lte IE 8]><script src="/js/libs/respond.min.js"></script><![endif]-->     
     <!--[if (lt IE 9) & (!IEMobile)]>
 	<script src="js/libs/selectivizr-min.js"></script>
